@@ -1,24 +1,28 @@
-import { Box, Center, SimpleGrid } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Center, Container, SimpleGrid } from '@chakra-ui/react'
+
 import SignupLeftCompo from './SignupLeftCompo'
 import SignupNavbar from './SignupNavbar'
 import SignupRightCompo from './SignupRightCompo'
 
 function SignUpPage() {
     return (
-        <Box>
+    
+            <Container style={{ transition: "1s all ease" }} border={"2px"} minW={"100%"}>
 
 
-            <SignupNavbar />
-            <Center>
-                <SimpleGrid columns={[1, 1, 2, 2]} gap={"28"}>
-                    <SignupLeftCompo />
-                    <SignupRightCompo />
-                </SimpleGrid>
-            </Center>
+                   <SignupNavbar />
+              
+                    <SimpleGrid columns={[1, 1, 1, 2]} gap={"28"} p={["1","10","14","20"]}>
+                        <SignupLeftCompo />
+                        <SignupRightCompo />
+                    </SimpleGrid>
+             
 
 
-        </Box>
+            </Container>
+
+  
+
     )
 }
 
