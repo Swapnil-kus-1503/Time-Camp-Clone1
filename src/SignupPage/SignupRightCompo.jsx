@@ -4,7 +4,7 @@ import React from 'react'
 function SignupRightCompo() {
     return (
         <Box
-            w={["300", "400px", "520px"]}
+            w={["300", "420px","490px", "520px"]}
             
             // w={["380px","450px","520px"]} minH={"509px"}
             boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"} borderRadius={"3xl"}
