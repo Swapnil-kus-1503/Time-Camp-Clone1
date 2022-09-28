@@ -5,7 +5,7 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
-import { auth } from "../SignupPage/Firebase";
+import { auth } from "../LoginPage/Firebase";
 const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const [user, setuser] = useState({});

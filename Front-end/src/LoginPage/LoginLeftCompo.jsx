@@ -1,7 +1,7 @@
 import { Box,  Center, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
-function SignupLeftCompo() {
+function LoginLeftCompo() {
    
     return (
         <Flex rowGap={"10"} direction="column" justify={"center"}>
@@ -43,4 +43,4 @@ function SignupLeftCompo() {
     )
 }
 
-export default SignupLeftCompo
+export default LoginLeftCompo
