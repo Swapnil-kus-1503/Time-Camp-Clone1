@@ -11,7 +11,7 @@ function LoginInPage() {
 
         <Box style={stile} w={"100%"}>
             <LoginNavbar />
-            <SimpleGrid columns={[1, 1, 1, 2]} gap={"28"} p={["1", "10", "14", "20"]}>
+            <SimpleGrid columns={[1, 1, 1, 2]} gap={"28"} p={["1", "10", "12", "16"]}>
                 <LoginLeftCompo />
                 <LoginRightCompo />
             </SimpleGrid>

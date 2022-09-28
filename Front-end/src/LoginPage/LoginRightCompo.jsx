@@ -44,7 +44,7 @@ function LoginRightCompo() {
 
             boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"} borderRadius={"3xl"}
         >
-            <Flex direction={"column"} align="center" p={["4", "7", "10", "14"]} gap={"6"} >
+            <Flex direction={"column"} align="center" p={["4", "7", "10", "14"]} gap={"5"} >
                 <Heading size={"md"}>Log in to TimeCamp</Heading>
                 <Button onClick={handleGoogleSignin} bg={"white"} border={"1px solid grey"} w={"100%"}><Image mr={"2.5"} h={"6"} src=
                     'https://i.ibb.co/yPYCXhz/googel.png'></Image> Log in with Google</Button>
