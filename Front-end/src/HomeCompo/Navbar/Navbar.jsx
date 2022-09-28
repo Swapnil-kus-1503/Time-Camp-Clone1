@@ -1,4 +1,3 @@
-
 import {
   Box,
   Flex,
@@ -15,14 +14,12 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-
-
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -40,11 +37,9 @@ export default function Navbar() {
           w={{ sm: "94%", md: "84%", lg: "84%" }}
           ml={{ sm: "3%", md: "8%", lg: "8%" }}
           justifyContent={"space-between"}
-
         >
           <Flex
             alignItems={"center"}
-
             w={{ base: "30%", sm: "30%", md: "18%", lg: "12%" }}
             h={"100px"}
           >
@@ -52,7 +47,6 @@ export default function Navbar() {
           </Flex>
 
           <Flex
-
             w="34%"
             h={"100"}
             alignItems="center"
@@ -166,7 +160,12 @@ export default function Navbar() {
               <Link
                 _hover={{ bg: "white", color: "green", textDecoration: "none" }}
               >
-                <Text cursor={"pointer"} onClick={() => navigate("/login")} fontWeight={500} bg={"white"}>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => navigate("/login")}
+                  fontWeight={500}
+                  bg={"white"}
+                >
                   Sign in
                 </Text>
               </Link>

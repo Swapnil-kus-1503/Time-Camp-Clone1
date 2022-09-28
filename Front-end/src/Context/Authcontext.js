@@ -9,7 +9,7 @@ import { auth } from "../LoginPage/Firebase";
 const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const [user, setuser] = useState({});
-  const googleSignin = () => {
+  const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider);
   };
@@ -28,7 +28,7 @@ export const AuthContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ googleSignin, logOut, user }}>
+    <AuthContext.Provider value={{ googleSignIn, logOut, user }}>
       {children}
     </AuthContext.Provider>
   );
