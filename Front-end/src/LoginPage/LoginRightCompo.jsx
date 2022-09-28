@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading, Image, Input, Text } from '@chakra-ui/react
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { UserAuth } from '../Context/Authcontext'
-function SignupRightCompo() {
+function LoginRightCompo() {
     const navigate = useNavigate()
     const { googleSignin, user } = UserAuth()
     console.log(user);
@@ -42,4 +42,4 @@ function SignupRightCompo() {
     )
 }
 
-export default SignupRightCompo
+export default LoginRightCompo

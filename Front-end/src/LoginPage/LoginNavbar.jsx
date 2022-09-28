@@ -1,7 +1,7 @@
 import { Box, Image } from '@chakra-ui/react'
 import React from 'react'
 
-function SignupNavbar() {
+function LoginNavbar() {
   
     return (
         <Box minH={"80px"} boxShadow={"rgba(0, 0, 0, 0.1) 0px 4px 12px"}>
@@ -10,4 +10,4 @@ function SignupNavbar() {
     )
 }
 
-export default SignupNavbar
+export default LoginNavbar
