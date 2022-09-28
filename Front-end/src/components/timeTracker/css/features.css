@@ -1,3 +1,6 @@
+p {
+  margin-bottom: 1rem;
+}
 #top {
   padding: 6rem 0;
   font-weight: 300;
@@ -295,4 +298,76 @@ button.btn-read-more {
 }
 #feature-section .container .col-sm-12 {
   margin-bottom: 6rem;
+}
+#reviews,
+#features-perks {
+  margin-bottom: 5rem;
+}
+#reviews .container .row .col-sm-12 {
+  margin: 5rem 0 0;
+}
+
+#reviews .container .row .col-sm-12 h2 {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  cursor: default;
+}
+#reviews .container .row .col-sm-12 {
+  margin: 5rem 0 0;
+}
+#reviews .container .row .carousel,
+#features-perks .container .row .carousel {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  padding-right: 0;
+}
+.carousel {
+  position: relative;
+}
+#reviews .container .row .carousel .customer-review,
+#reviews .container .row .carousel .perk-content,
+#features-perks .container .row .carousel .customer-review,
+#features-perks .container .row .carousel .perk-content {
+  padding: 1.5rem 0 1rem;
+  display: flex;
+}
+
+#reviews .container .row .col-sm-12 .carousel-item .customer-review .text {
+  padding: 0 3rem 0 5rem;
+}
+#reviews .container .row .carousel .customer-review .text,
+#reviews .container .row .carousel .perk-content .text,
+#features-perks .container .row .carousel .customer-review .text,
+#features-perks .container .row .carousel .perk-content .text {
+  box-shadow: 26px 16px 20px 0 rgb(33 31 45 / 2%);
+  border: solid 1px rgba(33, 31, 45, 0.1);
+  padding: 1.5rem 3rem 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+}
+#reviews
+  .container
+  .row
+  .col-sm-12
+  .carousel-item
+  .customer-review
+  .customer-review-text {
+  margin-bottom: 2rem;
+  color: #1b1b20;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: nunito sans, sans-serif;
+}
+#reviews .container .row .carousel .customer-review .text p,
+#reviews .container .row .carousel .perk-content .text p,
+#features-perks .container .row .carousel .customer-review .text p,
+#features-perks .container .row .carousel .perk-content .text p {
+  font-size: 16px;
+  font-weight: 600;
 }
