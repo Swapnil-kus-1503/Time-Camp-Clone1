@@ -14,7 +14,7 @@ const firebaseConfig = {
   storageBucket: "timecamp-76e31.appspot.com",
   messagingSenderId: "113306228211",
   appId: "1:113306228211:web:aa0e6dfa89e7c623a06e86",
-  measurementId: "G-VL0BFXNZGD"
+  measurementId: "G-VL0BFXNZGD",
 };
 
 // Initialize Firebase

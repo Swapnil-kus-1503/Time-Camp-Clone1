@@ -1,6 +1,4 @@
-
 import Allroutes from "./AllRoutes";
-
 
 function App() {
   return (

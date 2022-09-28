@@ -1,14 +1,11 @@
 import { ReactNode } from "react";
 import {
-
   Flex,
-
   Button,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
-
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -24,9 +21,9 @@ export default function Features() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Menu isOpen={isOpen} >
+      <Menu isOpen={isOpen}>
         <MenuButton
-          varient='ghost'
+          varient="ghost"
           as={Button}
           rightIcon={<ChevronDownIcon />}
           // border="none"
@@ -47,10 +44,7 @@ export default function Features() {
             }}
           >
             <Flex alignItems={"center"}>
-              <AiOutlineClockCircle
-                size={"20px"}
-
-              />
+              <AiOutlineClockCircle size={"20px"} />
               <Text ml={5}>Automatic time tracking</Text>
             </Flex>
           </MenuItem>
@@ -86,7 +80,7 @@ export default function Features() {
             }}
           >
             <Flex alignItems={"center"}>
-              < BsCalendarCheck size={"20px"} />
+              <BsCalendarCheck size={"20px"} />
               <Text ml={5}>Timesheet approvals</Text>
             </Flex>
           </MenuItem>
@@ -98,7 +92,7 @@ export default function Features() {
             }}
           >
             <Flex alignItems={"center"}>
-              < IoServerOutline size={"20px"} />
+              <IoServerOutline size={"20px"} />
               <Text ml={5}>Invoicing</Text>
             </Flex>
           </MenuItem>
@@ -110,10 +104,9 @@ export default function Features() {
             }}
           >
             <Flex alignItems={"center"}>
-              < RiMoneyDollarBoxLine size={"20px"} />
+              <RiMoneyDollarBoxLine size={"20px"} />
               <Text ml={5}>Billing rates and budgeting</Text>
             </Flex>
-
           </MenuItem>
           <MenuItem
             _hover={{
@@ -123,14 +116,12 @@ export default function Features() {
             }}
           >
             <Flex alignItems={"center"}>
-              < GiPathDistance size={"20px"} />
+              <GiPathDistance size={"20px"} />
               <Text ml={5}>Time off & attendence</Text>
             </Flex>
-
           </MenuItem>
-
         </MenuList>
       </Menu>
     </>
-  )
+  );
 }
