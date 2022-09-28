@@ -31,6 +31,7 @@ function SignupRightCompo() {
                 <Button onClick={handleGoogleSignin} bg={"white"} border={"1px solid grey"} w={"100%"}><Image mr={"2.5"} h={"6"} src=
                     'https://i.ibb.co/yPYCXhz/googel.png'></Image> Log in with Google</Button>
                 <Text>Or</Text>
+                
                 <Input placeholder='Email'></Input>
                 <Input placeholder='Password'></Input>
                 <Text color={"#25CF60"}>Forgotten Password?</Text>
