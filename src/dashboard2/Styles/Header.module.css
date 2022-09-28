@@ -1,0 +1,13 @@
+.header_bar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.menubox{
+    display: flex;
+    gap: 1rem;
+    color:grey;
+}
