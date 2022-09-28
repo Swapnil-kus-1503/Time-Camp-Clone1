@@ -8,9 +8,11 @@ function Allroutes() {
     return (
         <div>
             <Routes>
-                <Route path='/' element={<Protected>
-                    <Home />
-                </Protected>} />
+                <Route path='/' element={<Home />
+                    // <Protected>
+
+                    // </Protected>
+                } />
                 <Route path='/login' element={<LoginInPage />} />
                 <Route path="/signup" element={<Singup />} />
             </Routes>

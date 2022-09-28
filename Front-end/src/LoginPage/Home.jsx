@@ -1,9 +1,12 @@
 import React from 'react'
+import EmployeeImage from '../HomeCompo/EmployeeImageCompo/EmployeeImage'
+import Navbar from '../HomeCompo/Navbar/Navbar'
 
 function Home() {
     return (
         <div>
-           Homepage
+            <Navbar />
+            <EmployeeImage />
         </div>
     )
 }
