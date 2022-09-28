@@ -9,12 +9,10 @@ function Allroutes() {
         <div>
             <Routes>
                 <Route path='/' element={<Protected>
-                     <Home />
+                    <Home />
                 </Protected>} />
-                <Route path='/login' element={
-                    <LoginInPage />
-                } />
-                <Route path ="/signup" element = {<Singup/>}/>
+                <Route path='/login' element={<LoginInPage />} />
+                <Route path="/signup" element={<Singup />} />
             </Routes>
         </div>
     )
