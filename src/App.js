@@ -1,9 +1,11 @@
-import SignUpPage from "./SignupPage/SignUpPage";
+
+import Allroutes from "./AllRoutes";
+
 
 function App() {
   return (
     <div className="App">
-      <SignUpPage />
+      <Allroutes />
     </div>
   );
 }

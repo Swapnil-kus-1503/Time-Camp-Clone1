@@ -1,7 +1,8 @@
-import { Box, Button, Center, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Box,  Center, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
 function SignupLeftCompo() {
+   
     return (
         <Flex rowGap={"10"} direction="column" justify={"center"}>
             <Text color={"#25CF60"} >PRODUCT UPDATE</Text>

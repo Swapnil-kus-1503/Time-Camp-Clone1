@@ -1,4 +1,4 @@
-import { Box, Center, Container, SimpleGrid } from '@chakra-ui/react'
+import { Box,  SimpleGrid } from '@chakra-ui/react'
 
 import SignupLeftCompo from './SignupLeftCompo'
 import SignupNavbar from './SignupNavbar'
