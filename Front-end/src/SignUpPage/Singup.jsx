@@ -14,7 +14,7 @@ import SignUpNavbar from "./SignupNav";
 const Singup = () => {
   return (
     <Box minW={"100%"}>
-      <SlideFade in={isOpen} offsetY="20px">
+      {/* <SlideFade in={isOpen} offsetY="20px">
         <Center>
           <Box
             color="black"
@@ -74,7 +74,7 @@ const Singup = () => {
             )}
           </Box>
         </Center>
-      </SlideFade>
+      </SlideFade> */}
       <SignUpNavbar />
       <Center p={"14"}>
         <SignUpCompo />
