@@ -1,7 +1,7 @@
 import {
   Box,
   Button,
-  Center,
+
   Flex,
   Heading,
   Image,
