@@ -4,24 +4,24 @@ import React from 'react'
 function LoginLeftCompo() {
 
     return (
-        <Flex rowGap={"10"} direction="column" justify={"center"}>
+        <Flex rowGap={["5", "7", "10"]} direction="column" justify={"center"}>
             <Text color={"#25CF60"} >PRODUCT UPDATE</Text>
             <Box>
-                <Heading fontSize={"5xl"}>
+                <Heading fontSize={["3xl", "4xl", "5xl"]}>
                     TimeCamp Plugin
                 </Heading>
-                <Heading fontSize={"5xl"}>
+                <Heading fontSize={["3xl", "4xl", "5xl"]}>
                     for Google
                 </Heading>
-                <Heading fontSize={"5xl"}>
+                <Heading fontSize={["3xl", "4xl", "5xl"]}>
                     Chrome
                 </Heading>
             </Box>
             <Box>
-                <Heading fontSize={"x-large"} color={"#767676"}>
+                <Heading fontSize={["xl", "2xl"]} color={"#767676"}>
                     Track time without leaving
                 </Heading>
-                <Heading fontSize={"x-large"} color={"#767676"}>
+                <Heading fontSize={["xl", "2xl"]} color={"#767676"}>
                     Chrome in 70+ online apps
                 </Heading>
             </Box>
