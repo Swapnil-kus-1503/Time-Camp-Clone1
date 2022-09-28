@@ -9,7 +9,7 @@ function Allroutes() {
     <div>
       <Routes>
         <Route
-          path="/"
+          path='/'
           element={
             <Home />
             // <Protected>
@@ -17,8 +17,8 @@ function Allroutes() {
             // </Protected>
           }
         />
-        <Route path="/login" element={<LoginInPage />} />
-        <Route path="/signup" element={<Singup />} />
+        <Route path='/login' element={<LoginInPage />} />
+        <Route path='/signup' element={<Singup />} />
       </Routes>
     </div>
   );
