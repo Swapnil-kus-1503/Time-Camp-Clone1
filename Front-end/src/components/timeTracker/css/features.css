@@ -99,3 +99,34 @@ label {
   width: 100%;
   vertical-align: middle;
 }
+
+#social-proof {
+  background-color: #25cf60;
+  width: 100%;
+  padding-bottom: 0 !important;
+}
+#social-proof .container .row {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  border-bottom: solid 1px #d8d8d8;
+}
+#social-proof .row {
+  border-bottom: none !important;
+}
+#social-proof .row .social-proof__heading h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: nunito sans, sans-serif;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+#social-proof .container .row .col-lg-2 {
+  text-align: center;
+  margin: 1rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
