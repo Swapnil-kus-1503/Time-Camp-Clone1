@@ -4,7 +4,7 @@ import { Box, Image, Flex, Heading, Center, SimpleGrid, Button } from "@chakra-u
 function EmployeeImage() {
     return (
         <div>
-            
+
             <Box bg={"#25cf60"} pt={"20px"}>
                 <Box w={"100%"} minH={"1px"}>
                     <Heading color={"white"} fontWeight={"700"} textAlign={"center"}>
@@ -15,8 +15,8 @@ function EmployeeImage() {
                 <Flex
                     pb={"0.5rem"}
                     justify={"space-between"}
-                    direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
-                    w={{ base: "100%", sm: "100%", md: "100%", lg: "80%" }}
+                    direction={["column", "column", "column", "row"]}
+                    w={["100%", "100%", "100%", "80%"]}
                 >
                     <Box
                         textAlign={"center"}
