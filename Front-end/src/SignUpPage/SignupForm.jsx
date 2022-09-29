@@ -13,7 +13,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { UserAuth } from "../Context/Authcontext";
 import { auth } from "../LoginPage/Firebase";
 
-function SignUpCompo() {
+function SignUpForm() {
   const navigate = useNavigate();
   const { googleSignIn, user } = UserAuth();
 
@@ -38,7 +38,7 @@ function SignUpCompo() {
   const [errorMsg, setErrorMsg] = useState("");
   const handleSubmit = () => {
     if (!values.email || !values.password) {
-      setErrorMsg("Fill all the fields");
+      setErrorMsg("All Fields Are Mandatory to fill");
       return;
     } else if (values.password.length < 6) {
       setErrorMsg("Password should me atleast 6 letters");
@@ -48,7 +48,7 @@ function SignUpCompo() {
       .then((res) => {
         console.log(res);
       })
-      .catch((er) => console.log(er));
+      .catch((err) => setErrorMsg(err.message.Firebase));
   };
   return (
     <Box
@@ -78,6 +78,8 @@ function SignUpCompo() {
           bg={"white"}
           border={"1px solid grey"}
           w={"100%"}
+          color={"#767676"}
+          fontWeight={"bold"}
         >
           <Image
             mr={"2.5"}
@@ -119,10 +121,10 @@ function SignUpCompo() {
         >
           Sign up for free
         </Button>
-        <Text color={"#25CF60"}>No account? Sign up or Log in with SSO</Text>
+        <Text color={"#767676"}>By signing up you agree to our <Text color={"#25CF60"}>Terms of Service and Privacy Policy</Text></Text>
       </Flex>
     </Box>
   );
 }
 
-export default SignUpCompo;
+export default SignUpForm;
