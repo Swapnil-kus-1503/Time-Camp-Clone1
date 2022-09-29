@@ -1,7 +1,7 @@
 import {
   Box,
   Flex,
-  Link,
+
   Button,
   useDisclosure,
   useColorModeValue,
@@ -13,6 +13,8 @@ import {
   DrawerFooter,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+
+import { Link, Navigate } from "react-router-dom"
 
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
@@ -98,13 +100,11 @@ export default function Navbar() {
               </Text>
             </Link>
 
-            <Link
-              _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-            >
-              <Text fontWeight={500} bg={"white"}>
-                Sign in
-              </Text>
-            </Link>
+
+            <Text cursor={"pointer"} _hover={{ bg: "white", color: "green", textDecoration: "none" }} onClick={() => navigate("/login")} fontWeight={500} bg={"white"}>
+              Sign in
+            </Text>
+
             <Button
               bg={"rgb(247,184,1)"}
               color="white"
@@ -157,18 +157,13 @@ export default function Navbar() {
                 </Text>
               </Link>
 
-              <Link
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-              >
-                <Text
-                  cursor={"pointer"}
-                  onClick={() => navigate("/login")}
-                  fontWeight={500}
-                  bg={"white"}
-                >
-                  Sign in
-                </Text>
-              </Link>
+
+
+              <Text onClick={() => navigate("/login")} _hover={{ bg: "white", color: "green", textDecoration: "none" }} cursor={"pointer"} fontWeight={"500"} bg={"white"}>
+                Sign in
+              </Text>
+
+
               <Button
                 bg={"rgb(247,184,1)"}
                 color="white"
