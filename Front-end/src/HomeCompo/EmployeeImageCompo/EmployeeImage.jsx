@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Image, Flex, Heading } from "@chakra-ui/react";
+import { Box, Image, Flex, Heading, Center, SimpleGrid, Button } from "@chakra-ui/react";
 function EmployeeImage() {
     return (
         <div>
