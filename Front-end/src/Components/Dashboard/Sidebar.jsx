@@ -9,7 +9,7 @@ import { BsFolder2Open } from "react-icons/bs";
 import { BsTags } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
 import { AiOutlineCheckSquare } from "react-icons/ai";
-import Reports from "../Reports";
+import Reports from "./Reports";
 import { Link, useNavigate } from "react-router-dom";
 
 const Sidebar = ({ setboxWidth, currComp }) => {
