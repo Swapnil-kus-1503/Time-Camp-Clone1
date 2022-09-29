@@ -8,6 +8,7 @@ import Reviews from "../components/timeTracker/Reviews";
 import QuickLook from "../components/timeTracker/QuickLook";
 import ExtraHeader from "../components/timeTracker/ExtraHeader";
 import Integrations from "../components/timeTracker/Integrations";
+import BottomCta from "../components/timeTracker/BottomCta";
 
 const TimeTracking = () => {
   return (
@@ -22,6 +23,7 @@ const TimeTracking = () => {
       <Reviews />
       <ExtraHeader />
       <Integrations />
+      <BottomCta />
     </>
   );
 };
