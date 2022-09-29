@@ -1,0 +1,21 @@
+.mainScheduleBox{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    color:rgb(120, 112, 112);
+}
+.dateBox{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.CalendarBox{
+    display: flex;
+    gap: 2rem;
+}
+.calendar_props{
+    display: flex;
+}
+

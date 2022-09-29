@@ -13,7 +13,7 @@ export const Header = () => {
       <Divider mt="0.5rem"/>
       <Box className={styles.header_bar}>
         <Box>
-          <Heading size={"md"} fontWeight="600" mt="0.5rem">Timesheet</Heading>
+          <Heading size={"md"} fontWeight="500" mt="0.5rem">Timesheet</Heading>
         </Box>
         <Box className={styles.menubox}>
           <Settings />
