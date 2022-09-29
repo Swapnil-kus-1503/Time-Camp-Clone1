@@ -14,7 +14,7 @@ function TimeTrackingTextCompo({ forwhome, firstHeading, secondHeading, thirdHea
             </Box>
             <Text>{littledes}</Text>
             <Heading fontSize={"lg"}>{fourthHeading}</Heading>
-            <hr style={{ height: "1px",color:"green" }} />
+            <hr style={{ height: "1px", color: "green" }} />
             <Text>{largestdes}</Text>
             <Button color={"white"} borderRadius={"full"} w={"70%"} bg={"#25CF60"}>{btnText}</Button>
 
