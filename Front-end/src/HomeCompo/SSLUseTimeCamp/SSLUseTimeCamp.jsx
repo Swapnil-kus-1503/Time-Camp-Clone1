@@ -1,4 +1,4 @@
-import { Box, Button, Center, Flex, Heading, Image, Input, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Heading, Input, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
 
 function SSLUseTimeCamp() {
@@ -25,7 +25,7 @@ function SSLUseTimeCamp() {
                                     </Input>
                                     <Button size={"lg"} w={["90%","80%","70%"]} color="white" bg={"#25CF60"} borderRadius={"full"}>Start tracking time</Button>
                                 </Flex>
-                                <Text>By signing up to our Terms and Conditions and privacy policy</Text>
+                                <Text fontSize={"lg"} fontWeight="500">By signing up to our Terms and Conditions and privacy policy</Text>
                             </Flex>
                         </Center>
                        
