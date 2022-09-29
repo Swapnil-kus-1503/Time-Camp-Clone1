@@ -371,3 +371,45 @@ button.btn-read-more {
   font-size: 16px;
   font-weight: 600;
 }
+
+#quick-look {
+  padding: 2rem 0 4rem;
+  background-color: #fff;
+}
+
+#quick-look .container .row {
+  justify-content: center;
+}
+
+#quick-look .container .row [class*=col-] {
+  text-align: center;
+  padding: 3rem;
+}
+
+#quick-look .container .row [class*=col-] .circle {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#quick-look .container .row [class*=col-] p {
+  font-size: 14px;
+  font-weight: 600;
+}
+#quick-look .container .row [class*=col-] p.blue {
+  font-size: 24px;
+  font-weight: 900;
+  color: #3c91e6;
+  margin: 0;
+}
+#quick-look .container .row [class*=col-] .value-list {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  font-family: nunito sans,sans-serif;
+}
