@@ -1,12 +1,15 @@
-import React from 'react'
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import React from "react"
+import Sidebar from "./Sidebar"
 
-function Dashboard() {
+const Dashboard = () => {
+ 
+
   return (
-    <div>
-        <h1>dashboard</h1>
+   <>
+   <Sidebar/>
+   </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Dashboard
+export default Dashboard;
