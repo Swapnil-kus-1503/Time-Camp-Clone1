@@ -1,7 +1,7 @@
 import {
   Box,
   Flex,
-  Link,
+
   Button,
   useDisclosure,
   useColorModeValue,
@@ -98,13 +98,11 @@ export default function Navbar() {
               </Text>
             </Link>
 
-            <Link
-              _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-            >
-              <Text fontWeight={500} bg={"white"}>
-                Sign in
-              </Text>
-            </Link>
+
+            <Text cursor={"pointer"} _hover={{ bg: "white", color: "green", textDecoration: "none" }} onClick={() => navigate("/login")} fontWeight={500} bg={"white"}>
+              Sign in
+            </Text>
+
             <Button
               bg={"rgb(247,184,1)"}
               color="white"
