@@ -507,9 +507,91 @@ a.plugin_buttons img {
   position: relative;
   box-shadow: 4px 2px 16px 0 rgb(0 0 0 / 6%);
 }
-img {
+#integrations .container .row .col-lg-7 img {
   width: 52px;
   height: 52px;
   vertical-align: middle;
   border-style: none;
+}
+
+#bottomCta {
+  text-align: center;
+  margin: 0 2rem;
+}
+
+#bottomCta .row {
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 5rem 0;
+  border-radius: 26px;
+}
+#bottomCta .row .greenSmallSkewCircle, #bottomCta .row .redSmallCircle, #bottomCta .row .blueSmallCircle, #bottomCta .row .greenSmallCircle {
+  position: absolute;
+  z-index: 1;
+}
+#bottomCta .row .greenSmallSkewCircle {
+  top: -3rem;
+  left: 19rem;
+}
+#bottomCta .row .redSmallCircle {
+  top: -1rem;
+  right: 10rem;
+}
+#bottomCta .row .blueSmallCircle {
+  left: 4rem;
+  bottom: 4rem;
+}
+#bottomCta .row .greenSmallCircle {
+  right: 6rem;
+  bottom: 5rem;
+}
+#bottomCta .row .col-sm-12 h2 {
+  font-size: 42px;
+  font-weight: 800;
+  width: 60%;
+  margin: 0 auto 3rem;
+}
+
+#bottomCta .row .col-sm-12 p {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 auto 3rem;
+  width: 65%;
+}
+
+#bottomCta .row .col-sm-12 .button-container .btn-filled {
+  margin-right: 1rem;
+  color: #1b1b20;
+}
+
+a.btn-filled.yellow, button.btn-filled.yellow {
+  background-color: #f7b801;
+}
+#bottomCta img{
+  width: auto;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: .25rem;
+  transition: all .15s ease-in-out;
+}
+a.btn-highlighted, button.btn-highlighted {
+  font-weight: 700;
+  border-radius: 26px;
+  background-color: unset;
+}
+#bottomCta .row .col-sm-12 .button-container .btn-highlighted {
+  padding: 12px 57px;
+  color: #1b1b20!important;
+  border: 1px solid #f7b801;
+  border-radius: 26px;
 }
