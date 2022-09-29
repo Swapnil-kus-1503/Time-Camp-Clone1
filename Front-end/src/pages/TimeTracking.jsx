@@ -6,6 +6,8 @@ import TopHeader from "../components/timeTracker/TopHeader";
 import FeatureSection from "../components/timeTracker/FeatureSection";
 import Reviews from "../components/timeTracker/Reviews";
 import QuickLook from "../components/timeTracker/QuickLook";
+import ExtraHeader from "../components/timeTracker/ExtraHeader";
+import Integrations from "../components/timeTracker/Integrations";
 
 const TimeTracking = () => {
   return (
@@ -18,6 +20,8 @@ const TimeTracking = () => {
       {/* features-perks */}
       <FeatureSection />
       <Reviews />
+      <ExtraHeader />
+      <Integrations />
     </>
   );
 };
