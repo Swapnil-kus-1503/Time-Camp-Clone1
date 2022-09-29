@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import {
   Flex,
   Button,
@@ -8,7 +7,6 @@ import {
   MenuItem,
   Text,
   useDisclosure,
-  Link,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -39,7 +37,6 @@ export default function Features() {
           Features
         </MenuButton>
         <MenuList onMouseEnter={onOpen} onMouseLeave={onClose} p={0}>
-      
           <MenuItem
             _hover={{
               borderRadius: "7px",
@@ -53,7 +50,7 @@ export default function Features() {
               <Text ml={5}>Automatic time tracking</Text>
             </Flex>
           </MenuItem>
-         
+
           <MenuItem
             _hover={{
               borderRadius: "7px",
