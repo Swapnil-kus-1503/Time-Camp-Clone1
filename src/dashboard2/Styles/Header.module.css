@@ -9,5 +9,5 @@
 .menubox{
     display: flex;
     gap: 1rem;
-    color:grey;
+    color:rgb(97, 88, 88);
 }
