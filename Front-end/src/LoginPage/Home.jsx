@@ -6,7 +6,7 @@ import TimeTrackingForEveryone from '../HomeCompo/TimeTrackingForEveryone/TimeTr
 import TimeTrackingIntegrations from '../HomeCompo/TimeTrackingIntegrations/TimeTrackingIntegrations'
 import WantAproductTour from '../HomeCompo/WantAProductTour/WantAproductTour'
 import YourTimeCostsMore from '../HomeCompo/YourTimeCostsMore/YourTimeCostsMore'
-
+import FAQCompo from "../HomeCompo/FAQ/FAQCompo"
 function Home() {
     return (
         <div>
@@ -19,6 +19,7 @@ function Home() {
             <TimeTrackingIntegrations />
             <YourTimeCostsMore />
             <SSLUseTimeCamp />
+            <FAQCompo />
         </div>
     )
 }
