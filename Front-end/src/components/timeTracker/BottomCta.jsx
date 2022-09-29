@@ -7,12 +7,12 @@ const BottomCta = () => {
         <div class="row">
           <img
             src="https://cdn-m.timecamp.com/img/greenbranding/greenSmallSkewCircle.svg"
-            alt="decorating image"
+            alt="decorating"
             class="greenSmallSkewCircle"
           />
           <img
             src="https://cdn-m.timecamp.com/img/greenbranding/redSmallCircle.svg"
-            alt="decorating image"
+            alt="decorating"
             class="redSmallCircle"
           />
           <div class="col-sm-12">
@@ -38,12 +38,12 @@ const BottomCta = () => {
           </div>
           <img
             src="https://cdn-m.timecamp.com/img/greenbranding/blueSmallCircle.svg"
-            alt="decorating image"
+            alt="decorating"
             class="blueSmallCircle"
           />
           <img
             src="https://cdn-m.timecamp.com/img/greenbranding/greenSmallCircle.svg"
-            alt="decorating image"
+            alt="decorating"
             class="greenSmallCircle"
           />
         </div>
