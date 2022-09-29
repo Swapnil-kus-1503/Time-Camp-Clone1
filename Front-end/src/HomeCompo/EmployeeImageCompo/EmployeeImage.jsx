@@ -1,5 +1,5 @@
 import React from "react";
-
+import Styles from "./Employee.module.css";
 import {
   Box,
   Image,
@@ -8,10 +8,98 @@ import {
   Center,
   SimpleGrid,
   Button,
+  Text,
 } from "@chakra-ui/react";
 function EmployeeImage() {
   return (
     <div>
+      <Box className={Styles.background}>
+        <Flex
+          className={Styles.left}
+          direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
+        >
+          <Box
+            className={Styles.leftbox}
+            w={{ base: "100%", sm: "100%", md: "100%", lg: "40%" }}
+          >
+            <h1>Free time tracking software</h1>
+            <h2>Increase project profitability with time tracking</h2>
+            <div>
+              <h3>✓ Unlimited users</h3>
+              <h3>✓ Unlimited projects</h3>
+              <h3>✓ 30+ integrations</h3>
+              <h3>✓ Automated time tracking</h3>
+            </div>
+            <Box
+              my="10"
+              w="100%"
+              px="4"
+              py="2"
+              bgColor="white"
+              borderRadius="50px"
+              boxShadow="md"
+              bg="white"
+            >
+              <input
+                type="email"
+                placeholder="Your e-mail address"
+                className={Styles.input}
+              />
+            </Box>
+            <Text my="10" fontSize="13px" color={"#767676"}>
+              By signing up you agree to our{" "}
+              <b className={Styles.greenText}>Terms and Conditions</b> and{" "}
+              <b className={Styles.greenText}>Privacy Policy</b>.
+            </Text>
+            <Flex
+              className={Styles.btndiv}
+              direction={{
+                base: "column",
+                sm: "column",
+                md: "column",
+                lg: "row",
+              }}
+            >
+              <button className={Styles.btn1}>Start tracking time</button>
+              <button className={Styles.btn2}>
+                Or sign up with:{" "}
+                <img
+                  src="https://cdn-m.timecamp.com/img/logos/google.svg"
+                  alt="google"
+                  className={Styles.btnimg}
+                />
+              </button>
+            </Flex>
+          </Box>
+
+          <Flex
+            className={Styles.right}
+            w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
+            mt={{ base: "3rem", sm: "3rem", md: "3rem", lg: "20rem" }}
+          >
+            <Flex className={Styles.personal}>
+              <img src="https://cdn-m.timecamp.com/img/person.jpg" alt="" />
+            </Flex>
+
+            <Box className={Styles.personalHeader}>
+              Adam Wagner, Co-owner and Chief Strategy Officer
+            </Box>
+
+            <Box className={Styles.personalPara}>
+              „TimeCamp proved to be an essential management tool that gives us
+              clear insight into a projects efficiency and helps to avoid an
+              overblown workload for our team.”
+            </Box>
+            <Image
+              className={Styles.logo}
+              src="https://cdn-m.timecamp.com/img/raindrop_logo.svg"
+              alt=""
+            />
+          </Flex>
+        </Flex>
+      </Box>
+
+
       <Box bg={"#25cf60"} pt={"20px"}>
         <Box w={"100%"} minH={"1px"}>
           <Heading color={"white"} fontWeight={"700"} textAlign={"center"}>
