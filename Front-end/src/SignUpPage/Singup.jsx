@@ -15,7 +15,7 @@ import SignUpNavbar from "./SignupNav";
 
 const Singup = () => {
   const { isOpen, onToggle } = useDisclosure();
-  const [type, setType] = useState("")
+  const [type, setType] = useState("");
 
   return (
     <Box minW={"100%"}>
