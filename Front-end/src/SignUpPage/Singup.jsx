@@ -1,4 +1,5 @@
 import {
+  Alert,
   AlertDescription,
   AlertIcon,
   AlertTitle,
@@ -6,12 +7,16 @@ import {
   Center,
   CloseButton,
   SlideFade,
+  useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
-import SignUpCompo from "./SignupForm";
+import React, { useState } from "react";
+import SignUpForm from "./SignupForm";
 import SignUpNavbar from "./SignupNav";
 
 const Singup = () => {
+  const { isOpen, onToggle } = useDisclosure();
+  const [type, setType] = useState("")
+
   return (
     <Box minW={"100%"}>
       <SlideFade in={isOpen} offsetY="20px">
@@ -75,9 +80,11 @@ const Singup = () => {
           </Box>
         </Center>
       </SlideFade>
+
       <SignUpNavbar />
+
       <Center p={"14"}>
-        <SignUpCompo />
+        <SignUpForm />
       </Center>
     </Box>
   );

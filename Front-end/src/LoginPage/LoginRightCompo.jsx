@@ -71,6 +71,8 @@ function LoginRightCompo() {
           bg={"white"}
           border={"1px solid grey"}
           w={"100%"}
+          color={"#767676"}
+          fontWeight={"bold"}
         >
           <Image
             mr={"2.5"}
