@@ -1,3 +1,7 @@
+*,  *::before, *::after{
+  box-sizing: border-box;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -412,4 +416,100 @@ button.btn-read-more {
   font-weight: 700;
   margin: 1.5rem auto;
   font-family: nunito sans,sans-serif;
+}
+
+section#extra_header .container .row .col-sm-12 {
+  margin: 5rem 0 0;
+}
+
+#extra_header .container .row .col-sm-12 p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 2rem;
+}
+#integrations {
+  padding: 7rem 0;
+  background-color: #f3f3f3;
+  margin-bottom: 5rem;
+}
+#integrations .container .row .col-lg-5 {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#integrations .container .row .col-lg-5 p {
+  margin: 1rem 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b1b20;
+}
+#integrations .container .row .col-lg-5 p.green {
+  color: #00bf71;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#integrations .container .row .col-lg-5 h2 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+a.btn-filled, button.btn-filled {
+  border-radius: 26px;
+  padding: 15px 40px;
+  color: #fff;
+  font-weight: 700;
+  outline: none;
+  border: none;
+}
+a.plugin_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70%;
+  margin: 2rem 0 0;
+}
+a.btn-filled.blue, button.btn-filled.blue {
+  background-color: #3c91e6;
+}
+a.plugin_buttons img {
+  width: 40px;
+  height: 40px;
+  margin: auto 1rem auto 0;
+}
+#integrations .container .row .col-lg-5 .btn-check-integrations {
+  color: #00bf71;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 3rem;
+  white-space: nowrap;
+  padding-bottom: 2rem;
+}
+
+#integrations .container .row .col-lg-7 .wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+#integrations .container .row .col-lg-7 .white-bg {
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 31px;
+  transition: all .2s ease-in-out;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  box-shadow: 4px 2px 16px 0 rgb(0 0 0 / 6%);
+}
+img {
+  width: 52px;
+  height: 52px;
+  vertical-align: middle;
+  border-style: none;
 }
