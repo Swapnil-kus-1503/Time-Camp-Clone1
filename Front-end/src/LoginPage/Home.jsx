@@ -7,7 +7,7 @@ import TimeTrackingIntegrations from '../HomeCompo/TimeTrackingIntegrations/Time
 import WantAproductTour from '../HomeCompo/WantAProductTour/WantAproductTour'
 import YourTimeCostsMore from '../HomeCompo/YourTimeCostsMore/YourTimeCostsMore'
 import FAQCompo from "../HomeCompo/FAQ/FAQCompo"
-import SocialProof from '../components/timeTracker/SocialProof'
+
 import Blog from '../HomeCompo/Blogs/Blog'
 import Footer from '../HomeCompo/Footer/Footer'
 function Home() {

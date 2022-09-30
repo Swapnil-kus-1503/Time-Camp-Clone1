@@ -1,4 +1,4 @@
-import { Box, Button, Center, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
 
 function WantAproductTour() {

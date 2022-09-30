@@ -1,6 +1,6 @@
 import {
   Alert,
-  AlertDescription,
+
   AlertIcon,
   AlertTitle,
   Box,
@@ -11,6 +11,8 @@ import {
   Heading,
   Image,
   Input,
+  InputGroup,
+  InputRightElement,
   SlideFade,
   Text,
   useDisclosure,
@@ -20,10 +22,12 @@ import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { UserAuth } from "../Context/Authcontext";
 import { auth } from "../LoginPage/Firebase";
+import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 function SignUpForm() {
   const { isOpen, onToggle } = useDisclosure();
   const [type, setType] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
   const { googleSignIn, user } = UserAuth();
@@ -60,9 +64,10 @@ function SignUpForm() {
     }
     createUserWithEmailAndPassword(auth, values.email, values.password)
       .then((res) => {
-        // console.log(res);
+
         onToggle();
         setType("success");
+
       })
       .catch((err) => {
         setErrorMsg(err.message);
@@ -92,11 +97,9 @@ function SignUpForm() {
                   <AlertIcon />
                   <AlertTitle>Sign up Successfull</AlertTitle>
 
-                  {/* <CloseButton
-                  position={"absolute"}
-                  right={"8px"}
-                  top={"8px"}
-                ></CloseButton> */}
+                  <CloseButton
+
+                  ></CloseButton>
                 </Alert>
               ) : type === "warning" ? (
                 <Alert
@@ -106,11 +109,9 @@ function SignUpForm() {
                 >
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
-                  {/* <CloseButton
-                  position={"absolute"}
-                  right={"8px"}
-                  top={"8px"}
-                ></CloseButton> */}
+                  <CloseButton
+
+                  ></CloseButton>
                 </Alert>
               ) : (
                 <Alert
@@ -120,11 +121,9 @@ function SignUpForm() {
                 >
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
-                  {/* <CloseButton
-                  position={"absolute"}
-                  right={"8px"}
-                  top={"8px"}
-                ></CloseButton> */}
+                  <CloseButton
+
+                  ></CloseButton>
                 </Alert>
               )}
             </Box>
@@ -179,12 +178,31 @@ function SignUpForm() {
               setValues((prev) => ({ ...prev, email: e.target.value }))
             }
           />
-          <Input
-            placeholder="Password"
-            onChange={(e) =>
-              setValues((prev) => ({ ...prev, password: e.target.value }))
-            }
-          />
+
+
+
+
+          <InputGroup>
+
+            <Input
+              type={showPassword ? 'text' : 'password'}
+              placeholder="password"
+              onChange={(e) =>
+                setValues((prev) => ({ ...prev, password: e.target.value }))
+              }
+
+            />
+            <InputRightElement h={'full'}>
+              <Button
+                size={"lg"}
+                variant={'icono'}
+                onClick={() =>
+                  setShowPassword((showPassword) => !showPassword)
+                }>
+                {showPassword ? <ViewIcon bgSize={"2px"} /> : <ViewOffIcon />}
+              </Button>
+            </InputRightElement>
+          </InputGroup>
           <Input
             placeholder="Phone(Optional)"
             type="number"

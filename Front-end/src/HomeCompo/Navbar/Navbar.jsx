@@ -12,9 +12,9 @@ import {
   DrawerBody,
   DrawerFooter,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
-import { Link, Navigate } from "react-router-dom"
+import { Link} from "react-router-dom"
 
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
