@@ -1,7 +1,6 @@
 import {
   Box,
   Flex,
-
   Button,
   useDisclosure,
   useColorModeValue,
@@ -14,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
@@ -27,10 +26,8 @@ export default function Navbar() {
   return (
     <>
       <Box
-        
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
-        
         // border="2px solid black"
         background="rgb(255,255,255)"
       >
@@ -45,6 +42,7 @@ export default function Navbar() {
             alignItems={"center"}
             w={{ base: "30%", sm: "30%", md: "18%", lg: "12%" }}
             h={"100px"}
+            onClick={() => navigate("/")}
           >
             <Image src="https://www.timecamp.com/kb/wp-content/uploads/2020/11/colorLogo_lc.png" />
           </Flex>
@@ -101,8 +99,13 @@ export default function Navbar() {
               </Text>
             </Link>
 
-
-            <Text cursor={"pointer"} _hover={{ bg: "white", color: "green", textDecoration: "none" }} onClick={() => navigate("/login")} fontWeight={500} bg={"white"}>
+            <Text
+              cursor={"pointer"}
+              _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+              onClick={() => navigate("/login")}
+              fontWeight={500}
+              bg={"white"}
+            >
               Sign in
             </Text>
 
@@ -134,13 +137,17 @@ export default function Navbar() {
               ml={{ sm: "3%", md: "8%" }}
             >
               <Features />
-              <Link
+
+              <Text
                 _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                cursor={"pointer"}
+                fontWeight={"500"}
+                bg={"white"}
+                onClick={() => navigate("/pricing")}
               >
-                <Text fontWeight={500} bg={"white"}>
-                  Pricing
-                </Text>
-              </Link>
+                Pricing
+              </Text>
+
               <Integrations />
               <Link
                 _hover={{ bg: "white", color: "green", textDecoration: "none" }}
@@ -158,12 +165,15 @@ export default function Navbar() {
                 </Text>
               </Link>
 
-
-
-              <Text onClick={() => navigate("/login")} _hover={{ bg: "white", color: "green", textDecoration: "none" }} cursor={"pointer"} fontWeight={"500"} bg={"white"}>
+              <Text
+                onClick={() => navigate("/login")}
+                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                cursor={"pointer"}
+                fontWeight={"500"}
+                bg={"white"}
+              >
                 Sign in
               </Text>
-
 
               <Button
                 bg={"rgb(247,184,1)"}
