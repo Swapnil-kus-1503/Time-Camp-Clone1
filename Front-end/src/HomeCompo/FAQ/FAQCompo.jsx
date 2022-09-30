@@ -124,8 +124,7 @@ function FAQCompo() {
             </AccordionItem>
           </Box>
           <Box >
-           
-            <AccordionItem minH={"100%"}>
+           <AccordionItem minH={"100%"}>
               <AccordionButton>
                 <Flex justifyContent={"space-between"} align="center" w={"100%"} >
                   <Box minH={"60px"} dis>
