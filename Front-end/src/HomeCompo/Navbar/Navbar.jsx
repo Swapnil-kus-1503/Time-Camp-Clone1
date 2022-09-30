@@ -1,7 +1,6 @@
 import {
   Box,
   Flex,
-
   Button,
   useDisclosure,
   useColorModeValue,
@@ -15,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
@@ -31,7 +30,6 @@ export default function Navbar() {
         style={{ position: "sticky" }}
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
-     
         // border="2px solid black"
         background="rgb(255,255,255)"
       >
@@ -102,8 +100,13 @@ export default function Navbar() {
               </Text>
             </Link>
 
-
-            <Text cursor={"pointer"} _hover={{ bg: "white", color: "green", textDecoration: "none" }} onClick={() => navigate("/login")} fontWeight={500} bg={"white"}>
+            <Text
+              cursor={"pointer"}
+              _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+              onClick={() => navigate("/login")}
+              fontWeight={500}
+              bg={"white"}
+            >
               Sign in
             </Text>
 
@@ -134,10 +137,14 @@ export default function Navbar() {
               w={{ sm: "94%", md: "84%" }}
               ml={{ sm: "3%", md: "8%" }}
             >
-              <Stack direction={"column"} gap={"4"} align={"flex-start"} >
+              <Stack direction={"column"} gap={"4"} align={"flex-start"}>
                 <Features />
                 <Link
-                  _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
                 >
                   <Text fontWeight={500} bg={"white"}>
                     Pricing
@@ -145,7 +152,11 @@ export default function Navbar() {
                 </Link>
                 <Integrations />
                 <Link
-                  _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
                 >
                   <Text fontWeight={500} bg={"white"}>
                     Blog
@@ -153,21 +164,31 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
                 >
                   <Text fontWeight={500} bg={"white"}>
                     Book a Demo
                   </Text>
                 </Link>
 
-
-
-                <Text onClick={() => navigate("/login")} _hover={{ bg: "white", color: "green", textDecoration: "none" }} cursor={"pointer"} fontWeight={"500"} bg={"white"}>
+                <Text
+                  onClick={() => navigate("/login")}
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
+                  cursor={"pointer"}
+                  fontWeight={"500"}
+                  bg={"white"}
+                >
                   Sign in
                 </Text>
               </Stack>
-
-
 
               <Button
                 bg={"rgb(247,184,1)"}

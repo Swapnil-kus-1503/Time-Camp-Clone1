@@ -7,9 +7,9 @@ const ExtraHeader = () => {
         <div class="row">
           <div class="col-sm-12 description">
             <p>
-              Distribute the work on projects and tasks and {' '}
+              Distribute the work on projects and tasks and{" "}
               <strong>track the progress</strong> performed by your team. Bill
-              your time on any particular tasks and make sure you will {" "}
+              your time on any particular tasks and make sure you will{" "}
               <strong>never exceed your budget.</strong>
             </p>
           </div>
