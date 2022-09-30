@@ -22,7 +22,7 @@ import {
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../Context/Authcontext";
 import { auth } from "./Firebase";
@@ -32,7 +32,7 @@ function LoginRightCompo() {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const [errorMsg, setErrorMsg] = useState("");
-  const { googleSignIn } = UserAuth();
+  const { googleSignIn, user } = UserAuth();
 
   const handleGoogleSignIn = async () => {
     try {
@@ -42,22 +42,22 @@ function LoginRightCompo() {
     }
   };
   // useEffect(() => {
-  //    if (user !== null) {
-  //         navigate("/")
-  //     }
-  //  }, [user])
+  //   if (user !== null) {
+  //     navigate("/dashboard")
+  //   }
+  // }, [user])
   const [values, setValues] = useState({
     email: "",
     password: "",
   });
   const handleSubmit = () => {
-  
+
     if (!values.email || !values.password) {
 
       setErrorMsg("All the fields are necessary ");
       onToggle()
       setType("warning")
-    
+
     }
     else if (values.password.length < 6) {
 
@@ -70,7 +70,7 @@ function LoginRightCompo() {
       .then(() => {
         onToggle()
         setType("success")
-        navigate("/");
+        navigate("/dashboard");
       })
       .catch((er) => {
 

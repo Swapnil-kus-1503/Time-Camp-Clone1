@@ -63,12 +63,13 @@ function SignUpForm() {
       onToggle();
       setType("warning");
     }
-    
+
     createUserWithEmailAndPassword(auth, values.email, values.password)
       .then((res) => {
-       
+
         onToggle();
         setType("success");
+        navigate("/login")
 
       })
       .catch((err) => {
