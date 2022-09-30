@@ -9,6 +9,7 @@ import YourTimeCostsMore from '../HomeCompo/YourTimeCostsMore/YourTimeCostsMore'
 import FAQCompo from "../HomeCompo/FAQ/FAQCompo"
 import SocialProof from '../components/timeTracker/SocialProof'
 import Blog from '../HomeCompo/Blogs/Blog'
+import Footer from '../HomeCompo/Footer/Footer'
 function Home() {
   return (
     <div>
@@ -22,6 +23,7 @@ function Home() {
       <SSLUseTimeCamp />
       <FAQCompo />
       <Blog />
+      <Footer />
     </div>
   )
 }

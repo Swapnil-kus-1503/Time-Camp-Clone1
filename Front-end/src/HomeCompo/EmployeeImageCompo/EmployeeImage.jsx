@@ -105,6 +105,7 @@ function EmployeeImage() {
                 px="2"
                 py="2"
               />
+
             </Box>
             <Text my="10" fontSize="13px" color={"#767676"}>
               By signing up you agree to our{" "}

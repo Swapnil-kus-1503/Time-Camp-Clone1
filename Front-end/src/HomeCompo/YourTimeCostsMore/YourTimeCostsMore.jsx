@@ -9,9 +9,7 @@ function YourTimeCostsMore() {
     return (
         <>
             <Tabs colorScheme={"whatsapp"} variant="solid-rounded">
-
-
-                <Flex align={"center"} direction="column" gap={"4"}>
+                 <Flex align={"center"} direction="column" gap={"4"}>
                     <Center>
                         <Flex align={"center"} direction="column" gap={"10"}>
 
@@ -29,10 +27,10 @@ function YourTimeCostsMore() {
                     </Center>
                     <TabPanels>
                         <TabPanel>
-                            <SimpleGrid border={"3px"} columns={["1", "2", "3", "4"]} gap="10" pl={["1", "1", "10", "28"]} pr={["1", "1", "10", "28"]}>
+                            <SimpleGrid border={"3px"} columns={["1", "2", "3", "4"]} gap="10" pl={["1", "1", "10", "28"]} pr={["1", "1", "10", "28"]} >
                                 <Box >
 
-                                    <Flex p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"7"}  >
+                                    <Flex p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["230px","250px","330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"7"}  >
                                         <Heading color={"#25CF60"}>Free</Heading>
                                         <Text>Free forever plan</Text>
                                         <hr style={{ height: "2px", width: "100%", color: "#25CF60", backgroundColor: "#25CF60" }} />
@@ -45,9 +43,9 @@ function YourTimeCostsMore() {
                                         </ul>
                                     </Flex>
                                 </Box>
-                                <Box >
+                                 <Box >
 
-                                    <Flex p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"7"}  >
+                                    <Flex p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["230px","250px","330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"7"}  >
                                         <Heading >$ 6.3</Heading>
                                         <Text>user/mo</Text>
                                         <hr style={{ height: "2px", width: "100%", color: "#25CF60", backgroundColor: "#25CF60" }} />
@@ -67,7 +65,7 @@ function YourTimeCostsMore() {
                                 </Box>
                                 <Box>
 
-                                    <Flex color={"white"} bg="#25CF60" p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"8"}  >
+                                    <Flex color={"white"} bg="#25CF60" p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["230px","250px","330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"8"}  >
                                         <Heading>$ 9</Heading>
                                         <Text>user/mo</Text>
                                         <hr style={{ height: "2px", width: "100%", color: "#FFFFFF", backgroundColor: "#FFFFFF" }} />
@@ -86,7 +84,7 @@ function YourTimeCostsMore() {
                                     </Flex>
                                 </Box>
                                 <Box >
-                                    <Flex p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"7"}  >
+                                    <Flex p={"4"} direction={"column"} borderRadius={"2xl"} border="2px" align={"center"} minW={["230px","250px","330px", "255px"]} minH={["330px", "440px", "550px"]} gap={"7"}  >
                                         <Text color={"#25CF60"}>ENTERPRISE</Text>
 
                                         <Heading >Lets discuss</Heading>
@@ -102,7 +100,7 @@ function YourTimeCostsMore() {
                                             <li>Self hosted server</li>
                                         </ul>
                                     </Flex>
-                                </Box>
+                                </Box> 
                             </SimpleGrid>
                         </TabPanel>
                         <TabPanel>
