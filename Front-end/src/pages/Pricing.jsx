@@ -6,6 +6,7 @@ import YourTimeCostsMore from "../HomeCompo/YourTimeCostsMore/YourTimeCostsMore"
 import SocialProof from "../components/timeTracker/SocialProof";
 import BottomCta from "../components/timeTracker/BottomCta";
 import CustomerStory from "../components/pricing/CustomerStory";
+import Table from "../components/pricing/Table";
 
 const Pricing = () => {
   return (
@@ -16,6 +17,7 @@ const Pricing = () => {
       <SocialProof />
       <BottomCta />
       <CustomerStory />
+      <Table />
     </div>
   );
 };

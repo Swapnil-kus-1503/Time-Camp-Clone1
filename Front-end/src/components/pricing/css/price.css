@@ -90,3 +90,122 @@ section#top>.container>.row h1, section#top>.container>.row h2.subheader {
     font-weight: 600;
     margin-bottom: 0;
 }
+
+section#table {
+    padding-top: 12rem;
+}
+
+section#table .container {
+    max-width: 100%;
+}
+section#table .container .row .col-sm-12 h2 {
+    font-size: 41px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.comparison {
+    margin: auto;
+    width: 80%;
+}
+section#table .container .row .comparison {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+section#table .container .row .comparison table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+th {
+    text-align: left;
+}
+
+section#table .container .row .comparison table thead tr th {
+    border-right: 1px solid #ddd;
+    empty-cells: show;
+    padding: 10px;
+}
+section#table .container .row .comparison table thead tr th.tl {
+    border-bottom: none;
+}
+section#table .container .row .comparison table thead tr th.compare-heading {
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: unset;
+    padding-top: 1rem;
+    text-align: center;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.red {
+    color: #eb5160;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.yellow {
+    color: #f7b801;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.green {
+    color: #00bf71;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.blue {
+    color: #3c91e6;
+}
+
+section#table .container .row .comparison table thead tr th.price-info {
+    text-align: center;
+    border-bottom: none;
+}
+section#table .container .row .comparison table thead tr th.price-info .add-margin {
+    margin-bottom: 2rem;
+}
+section#table .container .row .comparison table thead tr th.price-info .price-now {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 auto;
+}
+section#table .container .row .comparison table thead tr th.price-info .price-anually {
+    font-size: 12;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+a.btn-filled.blue, button.btn-filled.blue {
+    background-color: #3c91e6;
+}
+a.btn-filled, button.btn-filled {
+    border-radius: 26px;
+    padding: 15px 40px;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+section#table .container .row .comparison table tbody tr td {
+    font-size: 14px;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+    empty-cells: show;
+    padding: 10px;
+}
+section#table .container .row .comparison table tbody tr td.head-row {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 2rem 10px;
+}
+section#table .container .row .comparison table tbody tr td:first-child {
+    text-align: left;
+}
+section#table .container .row .comparison table tbody tr:nth-child(2n) {
+    background-color: #f3f3f3;
+}
+section#table .container .row .comparison table tbody tr td {
+    font-size: 14px;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+    empty-cells: show;
+    padding: 10px;
+}
+section#table .container .row .comparison .tick {
+    color: #1b1b20;
+}
