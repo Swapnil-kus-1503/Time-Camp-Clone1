@@ -139,13 +139,17 @@ export default function Navbar() {
               ml={{ sm: "3%", md: "8%" }}
             >
               <Features />
-              <Link
+
+              <Text
                 _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                cursor={"pointer"}
+                fontWeight={"500"}
+                bg={"white"}
+                onClick={() => navigate("/pricing")}
               >
-                <Text fontWeight={500} bg={"white"}>
-                  Pricing
-                </Text>
-              </Link>
+                Pricing
+              </Text>
+
               <Integrations />
               <Link
                 _hover={{ bg: "white", color: "green", textDecoration: "none" }}
