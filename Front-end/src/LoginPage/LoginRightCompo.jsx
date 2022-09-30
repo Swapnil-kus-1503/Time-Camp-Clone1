@@ -51,7 +51,7 @@ function LoginRightCompo() {
     password: "",
   });
   const handleSubmit = () => {
-    setErrorMsg("")
+  
     if (!values.email || !values.password) {
 
       setErrorMsg("All the fields are necessary ");
