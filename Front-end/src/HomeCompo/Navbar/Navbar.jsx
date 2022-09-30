@@ -11,10 +11,11 @@ import {
   DrawerContent,
   DrawerBody,
   DrawerFooter,
+  Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
@@ -27,10 +28,10 @@ export default function Navbar() {
   return (
     <>
       <Box
-        
+        style={{ position: "sticky" }}
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
-        
+     
         // border="2px solid black"
         background="rgb(255,255,255)"
       >
@@ -133,36 +134,39 @@ export default function Navbar() {
               w={{ sm: "94%", md: "84%" }}
               ml={{ sm: "3%", md: "8%" }}
             >
-              <Features />
-              <Link
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-              >
-                <Text fontWeight={500} bg={"white"}>
-                  Pricing
+              <Stack direction={"column"} gap={"4"} align={"flex-start"} >
+                <Features />
+                <Link
+                  _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                >
+                  <Text fontWeight={500} bg={"white"}>
+                    Pricing
+                  </Text>
+                </Link>
+                <Integrations />
+                <Link
+                  _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                >
+                  <Text fontWeight={500} bg={"white"}>
+                    Blog
+                  </Text>
+                </Link>
+
+                <Link
+                  _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                >
+                  <Text fontWeight={500} bg={"white"}>
+                    Book a Demo
+                  </Text>
+                </Link>
+
+
+
+                <Text onClick={() => navigate("/login")} _hover={{ bg: "white", color: "green", textDecoration: "none" }} cursor={"pointer"} fontWeight={"500"} bg={"white"}>
+                  Sign in
                 </Text>
-              </Link>
-              <Integrations />
-              <Link
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-              >
-                <Text fontWeight={500} bg={"white"}>
-                  Blog
-                </Text>
-              </Link>
+              </Stack>
 
-              <Link
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-              >
-                <Text fontWeight={500} bg={"white"}>
-                  Book a Demo
-                </Text>
-              </Link>
-
-
-
-              <Text onClick={() => navigate("/login")} _hover={{ bg: "white", color: "green", textDecoration: "none" }} cursor={"pointer"} fontWeight={"500"} bg={"white"}>
-                Sign in
-              </Text>
 
 
               <Button

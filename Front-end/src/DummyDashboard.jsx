@@ -1,10 +1,10 @@
-import { Box, Button } from '@chakra-ui/react'
+import { Box, Button, Heading } from '@chakra-ui/react'
 import React from 'react'
 import { UserAuth } from './Context/Authcontext'
 
 function DummyDashboard() {
     const { logOut, user } = UserAuth()
-    console.log('user:', user)
+
     const handleSignout = async () => {
         try {
             await logOut()
@@ -12,10 +12,10 @@ function DummyDashboard() {
             console.log(error);
         }
     }
-    
+
     return (
         <Box>
-              
+            <Heading>{user.email}</Heading>
             <Button onClick={handleSignout}>Logout</Button>
         </Box>
     )
