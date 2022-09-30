@@ -25,7 +25,7 @@ import { auth } from "../LoginPage/Firebase";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 function SignUpForm() {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle, onClose } = useDisclosure();
   const [type, setType] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -59,7 +59,7 @@ function SignUpForm() {
       setType("warning");
       return;
     } else if (values.password.length < 6) {
-      setErrorMsg("Password should me atleast 6 letters");
+      setErrorMsg("Password should be of atleast 6 letters");
       onToggle();
       setType("warning");
     }
@@ -101,7 +101,7 @@ function SignUpForm() {
                   <AlertTitle>Sign up Successfull</AlertTitle>
 
                   <CloseButton
-
+                    onClick={onClose}
                   ></CloseButton>
                 </Alert>
               ) : type === "warning" ? (
@@ -113,7 +113,7 @@ function SignUpForm() {
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
                   <CloseButton
-
+                    onClick={onClose}
                   ></CloseButton>
                 </Alert>
               ) : (
@@ -125,7 +125,7 @@ function SignUpForm() {
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
                   <CloseButton
-
+                    onClick={onClose}
                   ></CloseButton>
                 </Alert>
               )}

@@ -118,7 +118,7 @@ function LoginRightCompo() {
                   <AlertTitle>Login up Successfull</AlertTitle>
 
                   <CloseButton
-                    onClick={onclose}
+                    onClick={onClose}
                   ></CloseButton>
                 </Alert>
               ) : type === "warning" ? (
@@ -130,7 +130,7 @@ function LoginRightCompo() {
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
                   <CloseButton
-                    onClick={onclose}
+                    onClick={onClose}
 
                   ></CloseButton>
                 </Alert>
@@ -143,7 +143,7 @@ function LoginRightCompo() {
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
                   <CloseButton
-                    onClick={onclose}
+                    onClick={onClose}
                   ></CloseButton>
                 </Alert>
               )}
@@ -176,7 +176,7 @@ function LoginRightCompo() {
               h={"6"}
               src="https://i.ibb.co/yPYCXhz/googel.png"
             ></Image>{" "}
-            Log in with Google
+            Sign in with Google
           </Button>
           <Text>Or</Text>
 

@@ -28,6 +28,7 @@ export default function Features() {
           as={Button}
           rightIcon={<ChevronDownIcon />}
           // border="none"
+
           onMouseEnter={onOpen}
           onMouseLeave={onClose}
           backgroundColor="white"
