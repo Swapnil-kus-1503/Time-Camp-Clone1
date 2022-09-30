@@ -1,6 +1,5 @@
 import {
   Alert,
-
   AlertIcon,
   AlertTitle,
   Box,
@@ -52,7 +51,6 @@ function SignUpForm() {
   });
   const [errorMsg, setErrorMsg] = useState("");
   const handleSubmit = () => {
-
     if (!values.email || !values.password) {
       setErrorMsg("All Fields Are Mandatory to fill");
       onToggle();
@@ -66,11 +64,9 @@ function SignUpForm() {
 
     createUserWithEmailAndPassword(auth, values.email, values.password)
       .then((res) => {
-
         onToggle();
         setType("success");
-        navigate("/login")
-
+        navigate("/login");
       })
       .catch((err) => {
         setErrorMsg(err.message);
@@ -100,9 +96,7 @@ function SignUpForm() {
                   <AlertIcon />
                   <AlertTitle>Sign up Successfull</AlertTitle>
 
-                  <CloseButton
-                    onClick={onClose}
-                  ></CloseButton>
+                  <CloseButton onClick={onClose}></CloseButton>
                 </Alert>
               ) : type === "warning" ? (
                 <Alert
@@ -112,9 +106,7 @@ function SignUpForm() {
                 >
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
-                  <CloseButton
-                    onClick={onClose}
-                  ></CloseButton>
+                  <CloseButton onClick={onClose}></CloseButton>
                 </Alert>
               ) : (
                 <Alert
@@ -124,9 +116,7 @@ function SignUpForm() {
                 >
                   <AlertIcon />
                   <AlertTitle>{errorMsg}</AlertTitle>
-                  <CloseButton
-                    onClick={onClose}
-                  ></CloseButton>
+                  <CloseButton onClick={onClose}></CloseButton>
                 </Alert>
               )}
             </Box>
@@ -182,26 +172,20 @@ function SignUpForm() {
             }
           />
 
-
-
-
           <InputGroup>
-
             <Input
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               placeholder="password"
               onChange={(e) =>
                 setValues((prev) => ({ ...prev, password: e.target.value }))
               }
-
             />
-            <InputRightElement h={'full'}>
+            <InputRightElement h={"full"}>
               <Button
                 size={"lg"}
-                variant={'icono'}
-                onClick={() =>
-                  setShowPassword((showPassword) => !showPassword)
-                }>
+                variant={"icono"}
+                onClick={() => setShowPassword((showPassword) => !showPassword)}
+              >
                 {showPassword ? <ViewIcon bgSize={"2px"} /> : <ViewOffIcon />}
               </Button>
             </InputRightElement>

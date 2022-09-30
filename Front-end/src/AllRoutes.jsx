@@ -22,14 +22,14 @@ function Allroutes() {
         <Route path="/login" element={<LoginInPage />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="/time-tracking" element={<TimeTracking />} />
-        <Route path="/dashboard" element={
-          <Protected>
-
-            <DummyDashboard />
-          </Protected>
-
-
-        } />
+        <Route
+          path="/dashboard"
+          element={
+            <Protected>
+              <DummyDashboard />
+            </Protected>
+          }
+        />
       </Routes>
     </div>
   );
