@@ -8,12 +8,17 @@ import {
 function FAQCompo() {
   return (
     <>
-      <Box>
+      <Box >
    
-        <Center pt={"20"}>
+        <Center 
+        // pt={"20"}
+        >
           <Heading fontSize={"4xl"}>FAQ</Heading>
         </Center>
-        <Accordion allowToggle pl={["1", "1", "10", "28"]} pr={["1", "1", "10", "28"]}>
+        <Accordion allowToggle 
+        // p={["1", "1", "10", "24"]}
+        // pl={["1", "1", "10", "28"]} pr={["1", "1", "10", "28"]}
+        >
           <Box >
 
             <AccordionItem minH={"100%"}>

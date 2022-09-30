@@ -21,8 +21,8 @@ function Home() {
       <TimeTrackingIntegrations />
       <YourTimeCostsMore />
       <SSLUseTimeCamp />
-      <FAQCompo />
-      <Blog />
+      <FAQCompo /> 
+       <Blog />
     </div>
   )
 }

@@ -5,9 +5,10 @@ function Blog() {
     return (
 
 
-        <Flex gap={"6"} direction={"column"} bg={"#F3F3F3"} p={["1", "1", "10", "24"]} >
+        <Flex gap={"6"} direction={"column"} bg={"#F3F3F3"} p={["1", "1", "10", "24"]}
+        >
             <Text fontWeight={"500"} color={"#1DA44C"} >BLOG</Text>
-            <Flex justify={"space-between"}>
+            <Flex justify={"space-between"} direction={["column", "column", "row", "row"]} >
                 <Heading size={"2xl"}>Check the latest blog updates</Heading>
                 <Button size={"lg"} bg={"#1DA44C"} color={"white"} borderRadius="full">Check all articles</Button>
             </Flex>
