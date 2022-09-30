@@ -9,12 +9,12 @@ import { auth } from "../LoginPage/Firebase";
 import { useNavigate } from "react-router-dom";
 const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const [user, setuser] = useState({});
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider);
-    navigate("/dashboard")
+    navigate("/dashboard");
   };
   const logOut = () => {
     signOut(auth);
