@@ -27,9 +27,10 @@ export default function Navbar() {
   return (
     <>
       <Box
-        position={"sticky"}
+        
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
+        
         // border="2px solid black"
         background="rgb(255,255,255)"
       >
