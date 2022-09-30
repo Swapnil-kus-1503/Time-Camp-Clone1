@@ -62,8 +62,11 @@ function LoginRightCompo() {
 
     signInWithEmailAndPassword(auth, values.email, values.password)
       .then(() => {
-        onToggle();
-        setType("success");
+
+        setErrorMsg("Login successful")
+        onToggle()
+        setType("success")
+
         navigate("/dashboard");
       })
       .catch((er) => {
@@ -75,9 +78,12 @@ function LoginRightCompo() {
   const handleForgot = (email) => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
-        setErrorMsg("Email sent");
-        onToggle();
-        setType("success");
+
+
+        onToggle()
+        setErrorMsg("Email sent")
+        setType("success")
+
       })
       .catch((er) => {
         setErrorMsg(er.message);
@@ -92,8 +98,9 @@ function LoginRightCompo() {
           <Center>
             <Box
               color="black"
-              minW={"55%"}
-              minH={"40px"}
+
+
+
               rounded="md"
               shadow="md"
             >
@@ -102,32 +109,59 @@ function LoginRightCompo() {
                   status={"success"}
                   variant="left-accent"
                   borderRadius={"md"}
+                  h={"100%"}
                   display="block"
                 >
-                  <AlertIcon />
-                  <AlertTitle>Login up Successfull</AlertTitle>
+                  <Flex align={"center"}>
 
-                  <CloseButton onClick={onClose}></CloseButton>
+
+                    <AlertIcon />
+                    <AlertTitle>{errorMsg}</AlertTitle>
+
+                    <CloseButton
+                      onClick={onClose}
+                    ></CloseButton>
+                  </Flex>
+
                 </Alert>
               ) : type === "warning" ? (
                 <Alert
                   status={"warning"}
                   variant="left-accent"
                   borderRadius={"md"}
+                  h={"100%"}
+                  display="block"
                 >
-                  <AlertIcon />
-                  <AlertTitle>{errorMsg}</AlertTitle>
-                  <CloseButton onClick={onClose}></CloseButton>
+
+                  <Flex align={"center"}>
+
+                    <AlertIcon />
+                    <AlertTitle>{errorMsg}</AlertTitle>
+                    <CloseButton
+                      onClick={onClose}
+
+                    ></CloseButton>
+                  </Flex>
+
                 </Alert>
               ) : (
                 <Alert
                   status={"error"}
                   variant="left-accent"
                   borderRadius={"md"}
+                  h={"100%"}
+                  display="block"
                 >
-                  <AlertIcon />
-                  <AlertTitle>{errorMsg}</AlertTitle>
-                  <CloseButton onClick={onClose}></CloseButton>
+
+                  <Flex align={"center"}>
+
+                    <AlertIcon />
+                    <AlertTitle>{errorMsg}</AlertTitle>
+                    <CloseButton
+                      onClick={onClose}
+                    ></CloseButton>
+                  </Flex>
+
                 </Alert>
               )}
             </Box>
@@ -194,7 +228,7 @@ function LoginRightCompo() {
             onClick={() => handleForgot(values.email)}
             color={"#25CF60"}
           >
-            Forgotten Password?
+            Forgot Password?
           </Text>
 
           <Button
