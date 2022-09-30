@@ -4,101 +4,26 @@ import { Box, Image, Flex, Heading, Center, SimpleGrid, Button } from "@chakra-u
 function EmployeeImage() {
     return (
         <div>
+            <Box
 
-            <Box bg={"#25cf60"} pt={"20px"}>
-                <Box w={"100%"} minH={"1px"}>
-                    <Heading color={"white"} fontWeight={"700"} textAlign={"center"}>
-                        Trusted by 18,000 teams from all over the world (and still growing!)
-                    </Heading>
-                </Box>
+                overflowX={"hidden"}
 
-                <Flex
-                    pb={"0.5rem"}
-                    justify={"space-between"}
-                    direction={["column", "column", "column", "row"]}
-                    w={["100%", "100%", "100%", "80%"]}
-                >
-                    <Box
-                        textAlign={"center"}
-                        display="flex"
-                        justifyContent={"center"}
-                        position={"relative"}
-                        minH="1px"
-                    >
-                        <Image
-                            borderStyle={"none"}
-                            src="https://cdn-m.timecamp.com/img/greenbranding/social-proof-section/usp-logo-white.png"
-                            alt=""
-                        />
-                    </Box>
+                bgSize={"cover"}
+                bgPosition={"center"}
+                bgRepeat={"no-repeat"}
+                p={"6rem"}
 
-                    <Box
-                        textAlign={"center"}
-                        display="flex"
-                        justifyContent={"center"}
-                        position={"relative"}
-                        minH="1px"
-                    >
-                        <Image
-                            borderStyle={"none"}
-                            src="https://cdn-m.timecamp.com/img/greenbranding/social-proof-section/dsv-logo-white.png"
-                            alt=""
-                        />
-                    </Box>
+                height={"1100px"} border="2px" bgImg={"https://cdn-m.timecamp.com/img/backgroundTop.webp"}>
+                <Center>
+                    {/* write everything here  */}
+                    <Flex bgColor={"black"} w={"60%"} h={"300px"} border={"2px"}>
+                    </Flex>
+                    {/* write everything here */}
+                </Center>
 
-                    <Box
-                        textAlign={"center"}
-                        display="flex"
-                        justifyContent={"center"}
-                        position={"relative"}
-                        minH="1px"
-                    >
-                        <Image
-                            borderStyle={"none"}
-                            src="https://cdn-m.timecamp.com/img/greenbranding/social-proof-section/raindrop-logo-white.png"
-                        />
-                    </Box>
-                    <Box
-                        textAlign={"center"}
-                        display="flex"
-                        justifyContent={"center"}
-                        position={"relative"}
-                        minH="1px"
-                    >
-                        <Image
-                            borderStyle={"none"}
-                            src="https://cdn-m.timecamp.com/img/greenbranding/social-proof-section/saatchi-logo-white.png"
-                            alt=""
-                        />
-                    </Box>
-                    <Box
-                        textAlign={"center"}
-                        display="flex"
-                        justifyContent={"center"}
-                        position={"relative"}
-                        minH="1px"
-                    >
-                        <Image
-                            borderStyle={"none"}
-                            src="https://cdn-m.timecamp.com/img/greenbranding/social-proof-section/blitz-logo-white.png"
-                            alt=""
-                        />
-                    </Box>
-                    <Box
-                        textAlign={"center"}
-                        display="flex"
-                        justifyContent={"center"}
-                        position={"relative"}
-                        minH="1px"
-                    >
-                        <Image
-                            borderStyle={"none"}
-                            src="https://cdn-m.timecamp.com/img/greenbranding/social-proof-section/havas-logo-white.png"
-                            alt=""
-                        />
-                    </Box>
-                </Flex>
             </Box>
+
+
             <Center>
                 <SimpleGrid columns={["1", "1", "2"]} borderRadius={"2xl"} w={["100%", "90%", "80%"]} minH="438px" bg={"#1B1B20"}>
                     <Flex direction={"column"} gap="10" p={["4", "7", "12", "16"]}>

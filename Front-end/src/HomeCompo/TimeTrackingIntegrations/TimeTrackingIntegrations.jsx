@@ -7,7 +7,6 @@ function TimeTrackingIntegrations() {
         <Box bg={"#F3F3F3"} >
             <SimpleGrid columns={["1", "1", "2"]} p={["4", "10", "16", "28"]} gap="16">
                 <Flex direction={"column"} gap="6" w={"90%"} >
-
                     <Text fontWeight={"medium"} color={"#25CF60"}>  TIME TRACKING INTEGRATIONS</Text>
                     <Box>
                         <Heading size={"xl"}>Easy and quick integration </Heading>
