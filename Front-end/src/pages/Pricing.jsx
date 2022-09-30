@@ -8,6 +8,7 @@ import BottomCta from "../components/timeTracker/BottomCta";
 import CustomerStory from "../components/pricing/CustomerStory";
 import Table from "../components/pricing/Table";
 import Footer from "../HomeCompo/Footer/Footer";
+import FAQCompo from "../HomeCompo/FAQ/FAQCompo";
 
 const Pricing = () => {
   return (
