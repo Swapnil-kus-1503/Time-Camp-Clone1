@@ -25,7 +25,13 @@ function TimeTrackingTextCompo({
       <Heading fontSize={"lg"}>{fourthHeading}</Heading>
       <hr style={{ height: "1px", color: "green" }} />
       <Text>{largestdes}</Text>
-      <Button color={"white"} borderRadius={"full"} w={"70%"} bg={"#25CF60"}>
+      <Button
+        _hover={{ bgColor: "#1da44c" }}
+        color={"white"}
+        borderRadius={"full"}
+        w={"70%"}
+        bg={"#25CF60"}
+      >
         {btnText}
       </Button>
     </Flex>

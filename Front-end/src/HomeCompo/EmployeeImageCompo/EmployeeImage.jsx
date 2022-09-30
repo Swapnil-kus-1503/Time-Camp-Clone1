@@ -260,6 +260,7 @@ function EmployeeImage() {
               color="white"
               borderRadius={"full"}
               size={"lg"}
+              _hover={{bg:"orange"}}
             >
               Book a Demo
             </Button>

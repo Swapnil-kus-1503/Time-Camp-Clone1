@@ -35,6 +35,7 @@ function WantAproductTour() {
             color="white"
             borderRadius={"full"}
             size={"lg"}
+            _hover={{ bg: "orange" }}
           >
             Book a Demo
           </Button>

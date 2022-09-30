@@ -205,6 +205,7 @@ function SignUpForm() {
             size={"lg"}
             borderRadius={"3xl"}
             bg={"#25CF60"}
+            _hover={{ bgColor: "#1da44c" }}
           >
             Sign up for free
           </Button>

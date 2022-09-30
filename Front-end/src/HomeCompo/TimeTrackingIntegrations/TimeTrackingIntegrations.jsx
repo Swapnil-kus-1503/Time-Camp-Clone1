@@ -41,6 +41,7 @@ function TimeTrackingIntegrations() {
             borderRadius={"full"}
             w={["90%", "80%", "70%"]}
             bg={"#25CF60"}
+            _hover={{ bgColor: "#1da44c" }}
           >
             Track time in Chrome
           </Button>

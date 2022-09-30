@@ -62,10 +62,9 @@ function LoginRightCompo() {
 
     signInWithEmailAndPassword(auth, values.email, values.password)
       .then(() => {
-
-        setErrorMsg("Login successful")
-        onToggle()
-        setType("success")
+        setErrorMsg("Login successful");
+        onToggle();
+        setType("success");
 
         navigate("/dashboard");
       })
@@ -78,12 +77,9 @@ function LoginRightCompo() {
   const handleForgot = (email) => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
-
-
-        onToggle()
-        setErrorMsg("Email sent")
-        setType("success")
-
+        onToggle();
+        setErrorMsg("Email sent");
+        setType("success");
       })
       .catch((er) => {
         setErrorMsg(er.message);
@@ -96,14 +92,7 @@ function LoginRightCompo() {
       <Box>
         <SlideFade in={isOpen} offsetY="20px">
           <Center>
-            <Box
-              color="black"
-
-
-
-              rounded="md"
-              shadow="md"
-            >
+            <Box color="black" rounded="md" shadow="md">
               {type === "success" ? (
                 <Alert
                   status={"success"}
@@ -113,16 +102,11 @@ function LoginRightCompo() {
                   display="block"
                 >
                   <Flex align={"center"}>
-
-
                     <AlertIcon />
                     <AlertTitle>{errorMsg}</AlertTitle>
 
-                    <CloseButton
-                      onClick={onClose}
-                    ></CloseButton>
+                    <CloseButton onClick={onClose}></CloseButton>
                   </Flex>
-
                 </Alert>
               ) : type === "warning" ? (
                 <Alert
@@ -132,17 +116,11 @@ function LoginRightCompo() {
                   h={"100%"}
                   display="block"
                 >
-
                   <Flex align={"center"}>
-
                     <AlertIcon />
                     <AlertTitle>{errorMsg}</AlertTitle>
-                    <CloseButton
-                      onClick={onClose}
-
-                    ></CloseButton>
+                    <CloseButton onClick={onClose}></CloseButton>
                   </Flex>
-
                 </Alert>
               ) : (
                 <Alert
@@ -152,16 +130,11 @@ function LoginRightCompo() {
                   h={"100%"}
                   display="block"
                 >
-
                   <Flex align={"center"}>
-
                     <AlertIcon />
                     <AlertTitle>{errorMsg}</AlertTitle>
-                    <CloseButton
-                      onClick={onClose}
-                    ></CloseButton>
+                    <CloseButton onClick={onClose}></CloseButton>
                   </Flex>
-
                 </Alert>
               )}
             </Box>
@@ -237,6 +210,7 @@ function LoginRightCompo() {
             size={"lg"}
             borderRadius={"3xl"}
             bg={"#25CF60"}
+            _hover={{ bgColor: "#1da44c" }}
           >
             Login
           </Button>

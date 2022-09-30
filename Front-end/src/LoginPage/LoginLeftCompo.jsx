@@ -35,6 +35,7 @@ function LoginLeftCompo() {
         size={"lg"}
         bg={"#25CF60"}
         borderRadius={"3xl"}
+        _hover={{ bgColor: "#1da44c" }}
       >
         <Image
           maxH={"7"}
