@@ -5,11 +5,13 @@ import {FiUserPlus,} from "react-icons/fi";
 import { Settings } from './Settings';
 import { Help } from './Help';
 import { User } from './User';
+import { Trial } from './Trial';
 
 export const Header = () => {
   
   return (
     <Box>
+      <Trial />
       <Divider mt="0.5rem"/>
       <Box className={styles.header_bar}>
         <Box>

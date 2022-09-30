@@ -8,7 +8,14 @@ export const BulkEdit = () => {
   return (
     <Box>
    <Menu>
-       <MenuButton as={Button} _active={{border:"1px solid green"}}  border='0.5px solid #C0C0C0' leftIcon={<BsPencilSquare />}>Bulk edit</MenuButton>
+       <MenuButton 
+       as={Button} 
+       _active={{border:"1px solid green",color:"green"}}  
+       border='0.5px solid #C0C0C0' 
+       leftIcon={<BsPencilSquare />}
+       >
+        Bulk edit
+        </MenuButton>
     <MenuList>
       
       <InputGroup size='md'>
@@ -17,6 +24,7 @@ export const BulkEdit = () => {
         w='22rem'
         mr='1rem'
         ml='1rem'
+        placeholder='Search...'
       />
       <InputRightElement width='4.5rem'>
         <Button h='1.75rem' size='md' variant="ghost">
