@@ -1,4 +1,4 @@
-.background {
+/* .background {
   border: "1px solid red";
   background-image: url("https://cdn-m.timecamp.com/img/backgroundTop.webp");
   width: 100%;
@@ -17,21 +17,23 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 6rem 0;
-}
-.left {
+} */
+/* .left {
   width: 70%;
   margin: auto;
   justify-content: space-between;
   flex-wrap: wrap;
-}
 
-.leftbox {
+} */
+
+/* .leftbox {
   border-radius: 6px;
   backdrop-filter: blur(3px);
   background-color: rgba(255, 255, 255, 0.9);
   flex: 0 0 48%;
+  
   padding: 2rem;
-}
+} */
 
 .leftbox h1 {
   font-size: 14px;
