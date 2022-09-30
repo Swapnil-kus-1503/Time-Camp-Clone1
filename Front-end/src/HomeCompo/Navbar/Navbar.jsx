@@ -138,44 +138,62 @@ export default function Navbar() {
               w={{ sm: "94%", md: "84%" }}
               ml={{ sm: "3%", md: "8%" }}
             >
-              <Features />
+              <Stack direction={"column"} gap={"4"} align={"flex-start"}>
+                <Features />
 
-              <Text
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-                cursor={"pointer"}
-                fontWeight={"500"}
-                bg={"white"}
-                onClick={() => navigate("/pricing")}
-              >
-                Pricing
-              </Text>
-
-              <Integrations />
-              <Link
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-              >
-                <Text fontWeight={500} bg={"white"}>
-                  Blog
+                <Text
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
+                  cursor={"pointer"}
+                  fontWeight={"500"}
+                  bg={"white"}
+                  onClick={() => navigate("/pricing")}
+                >
+                  Pricing
                 </Text>
-              </Link>
 
-              <Link
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-              >
-                <Text fontWeight={500} bg={"white"}>
-                  Book a Demo
+                <Integrations />
+                <Link
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
+                >
+                  <Text fontWeight={500} bg={"white"}>
+                    Blog
+                  </Text>
+                </Link>
+
+                <Link
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
+                >
+                  <Text fontWeight={500} bg={"white"}>
+                    Book a Demo
+                  </Text>
+                </Link>
+
+                <Text
+                  onClick={() => navigate("/login")}
+                  _hover={{
+                    bg: "white",
+                    color: "green",
+                    textDecoration: "none",
+                  }}
+                  cursor={"pointer"}
+                  fontWeight={"500"}
+                  bg={"white"}
+                >
+                  Sign in
                 </Text>
-              </Link>
-
-              <Text
-                onClick={() => navigate("/login")}
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-                cursor={"pointer"}
-                fontWeight={"500"}
-                bg={"white"}
-              >
-                Sign in
-              </Text>
+              </Stack>
 
               <Button
                 bg={"rgb(247,184,1)"}
