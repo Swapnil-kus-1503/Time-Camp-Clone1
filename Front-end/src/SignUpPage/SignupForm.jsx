@@ -30,7 +30,7 @@ function SignUpForm() {
   const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
-  const { googleSignIn, user } = UserAuth();
+  const { googleSignIn } = UserAuth();
 
   const handleGoogleSignIn = async () => {
     console.log("Hello");
@@ -52,6 +52,7 @@ function SignUpForm() {
   });
   const [errorMsg, setErrorMsg] = useState("");
   const handleSubmit = () => {
+
     if (!values.email || !values.password) {
       setErrorMsg("All Fields Are Mandatory to fill");
       onToggle();
@@ -62,11 +63,13 @@ function SignUpForm() {
       onToggle();
       setType("warning");
     }
+
     createUserWithEmailAndPassword(auth, values.email, values.password)
       .then((res) => {
 
         onToggle();
         setType("success");
+        navigate("/login")
 
       })
       .catch((err) => {
