@@ -15,7 +15,6 @@ function Home() {
 
       <Navbar />
       <EmployeeImage />
-      <SocialProof />
       <TimeTrackingForEveryone />
       <WantAproductTour />
       <TimeTrackingIntegrations />
