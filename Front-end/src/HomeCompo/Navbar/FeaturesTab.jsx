@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import {
   Flex,
   Button,
@@ -17,7 +16,9 @@ import { FcStatistics } from "react-icons/fc";
 import { IoServerOutline } from "react-icons/io5";
 import { RiMoneyDollarBoxLine } from "react-icons/ri";
 import { GiPathDistance } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 export default function Features() {
+  const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -42,12 +43,14 @@ export default function Features() {
               bg: "rgb(37,207,96)",
               color: "white",
             }}
+            onClick={() => navigate("/time-tracking")}
           >
             <Flex alignItems={"center"}>
               <AiOutlineClockCircle size={"20px"} />
               <Text ml={5}>Automatic time tracking</Text>
             </Flex>
           </MenuItem>
+
           <MenuItem
             _hover={{
               borderRadius: "7px",
