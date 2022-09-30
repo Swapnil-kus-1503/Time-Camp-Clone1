@@ -25,9 +25,9 @@ export default function Footer() {
     return (
         <Box
             bg='gray.50'
-            color="gray.700" >
+            color="black" >
             <Container as={Stack} maxW={'6xl'} py={10}>
-                <SimpleGrid columns={[1, , 2, 4, 6]} spacing={8}>
+                <SimpleGrid columns={[2, 2, 4, 6]} spacing={8}>
                     <Stack align={'flex-start'}>
                         <ListHeader>Product</ListHeader>
                         <Link href={'#'}>Features</Link>
@@ -43,7 +43,7 @@ export default function Footer() {
                         <Link href={'#'}>Knowledge base</Link>
                         <Link href={'#'}>Developers API</Link>
                         <Link href={'#'}>Server Status</Link>
-                      
+
                     </Stack>
                     <Stack align={'flex-start'}>
                         <ListHeader>Integrations</ListHeader>
@@ -56,37 +56,40 @@ export default function Footer() {
 
                     </Stack>
                     <Stack align={'flex-start'}>
-                        <ListHeader>Follow Us</ListHeader>
-                        <Link href={'#'}>Facebook</Link>
-                        <Link href={'#'}>Twitter</Link>
-                        <Link href={'#'}>Dribbble</Link>
-                        <Link href={'#'}>Instagram</Link>
-                        <Link href={'#'}>LinkedIn</Link>
+                        <ListHeader>Resources</ListHeader>
+                        <Link href={'#'}>Contact</Link>
+                        <Link href={'#'}>HeySpace</Link>
+                        <Link href={'#'}>About us</Link>
+                        <Link href={'#'}>Press</Link>
+                        <Link href={'#'}>Become a Partner</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
-                        <ListHeader>Follow Us</ListHeader>
-                        <Link href={'#'}>Facebook</Link>
-                        <Link href={'#'}>Twitter</Link>
-                        <Link href={'#'}>Dribbble</Link>
-                        <Link href={'#'}>Instagram</Link>
-                        <Link href={'#'}>LinkedIn</Link>
+                        <ListHeader>Calculators</ListHeader>
+                        <Link href={'#'}>Profit Margin Calculator</Link>
+                        <Link href={'#'}>Online Timer</Link>
+                        <Link href={'#'}>Overtime</Link>
+                        <Link href={'#'}>Overtime Calculator</Link>
+                        <Link href={'#'}>ROI Caluculator</Link>
+                        <Link href={'#'}>Time Card Calculator</Link>
+
+
                     </Stack>
                     <Stack align={'flex-start'}>
-                        <ListHeader>Follow Us</ListHeader>
-                        <Link href={'#'}>Facebook</Link>
-                        <Link href={'#'}>Twitter</Link>
-                        <Link href={'#'}>Dribbble</Link>
-                        <Link href={'#'}>Instagram</Link>
-                        <Link href={'#'}>LinkedIn</Link>
+                        <ListHeader>Legal</ListHeader>
+                        <Link href={'#'}>Terms</Link>
+                        <Link href={'#'}>Privacy</Link>
+                        <Link href={'#'}>Security</Link>
+
                     </Stack>
                 </SimpleGrid>
             </Container>
-            <Box py={10}>
+            <Flex py={10} direction="column" align={"center"} >
 
-                <Text pt={6} fontSize={'sm'} textAlign={'center'}>
-                    © 2022 Chakra Templates. All rights reserved
+                <Text pt={6} fontSize={'sm'} >
+                    Copyright © 2022 TimeCamp.Inc
                 </Text>
-            </Box>
+                <Text fontSize={'sm'}>we use cookies click here to learn more</Text>
+            </Flex>
         </Box>
     );
 }
