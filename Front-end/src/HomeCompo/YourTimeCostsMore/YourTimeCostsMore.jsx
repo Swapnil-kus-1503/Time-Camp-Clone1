@@ -74,6 +74,7 @@ function YourTimeCostsMore() {
                       borderRadius={"full"}
                       bg="#25CF60"
                       color={"white"}
+                      _hover={{ bgColor: "#1da44c" }}
                     >
                       Join for free
                     </Button>
@@ -112,6 +113,7 @@ function YourTimeCostsMore() {
                       borderRadius={"full"}
                       bg="#25CF60"
                       color={"white"}
+                      _hover={{ bgColor: "#1da44c" }}
                     >
                       Start your free trial
                     </Button>
@@ -155,8 +157,9 @@ function YourTimeCostsMore() {
                       size={"lg"}
                       minW={"90%"}
                       borderRadius={"full"}
-                      bg="white"
+                      bg="#ffffff"
                       color={"#25CF60"}
+                      _hover={{ bgColor: "#ffffff" }}
                     >
                       Start your free trial
                     </Button>
@@ -201,6 +204,7 @@ function YourTimeCostsMore() {
                       borderRadius={"full"}
                       bg="#25CF60"
                       color={"white"}
+                      _hover={{ bgColor: "#1da44c" }}
                     >
                       Contact us
                     </Button>

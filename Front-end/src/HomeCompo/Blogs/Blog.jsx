@@ -24,7 +24,7 @@ function Blog() {
         direction={["column", "column", "row", "row"]}
       >
         <Heading size={"2xl"}>Check the latest blog updates</Heading>
-        <Button size={"lg"} bg={"#1DA44C"} color={"white"} borderRadius="full">
+        <Button _hover={{ bgColor: "#1da44c" }} size={"lg"} bg={"#25CF60"} color={"white"} borderRadius="full">
           Check all articles
         </Button>
       </Flex>
@@ -34,7 +34,7 @@ function Blog() {
           <Heading size={"md"}>
             13 Best Time Tracking Software for Architects
           </Heading>
-          <Text fontWeight={"500"} color={"#1DA44C"}>
+          <Text cursor={"pointer"} fontWeight={"500"} color={"#1DA44C"}>
             Read more
           </Text>
         </Flex>
@@ -43,7 +43,7 @@ function Blog() {
           <Heading size={"md"}>
             13 Best Time Tracking Software for Architects
           </Heading>
-          <Text fontWeight={"500"} color={"#1DA44C"}>
+          <Text cursor={"pointer"} fontWeight={"500"} color={"#1DA44C"}>
             Read more
           </Text>
         </Flex>
@@ -52,7 +52,7 @@ function Blog() {
           <Heading size={"md"}>
             13 Best Time Tracking Software for Architects
           </Heading>
-          <Text fontWeight={"500"} color={"#1DA44C"}>
+          <Text cursor={"pointer"} fontWeight={"500"} color={"#1DA44C"}>
             Read more
           </Text>
         </Flex>

@@ -67,6 +67,7 @@ function SSLUseTimeCamp() {
                   color="white"
                   bg={"#25CF60"}
                   borderRadius={"full"}
+                  _hover={{ bgColor: "#1da44c" }}
                 >
                   Start tracking time
                 </Button>

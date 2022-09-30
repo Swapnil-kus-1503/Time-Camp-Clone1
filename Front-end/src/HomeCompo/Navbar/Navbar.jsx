@@ -46,7 +46,7 @@ export default function Navbar() {
             h={"100px"}
             onClick={() => navigate("/")}
           >
-            <Image src="https://www.timecamp.com/kb/wp-content/uploads/2020/11/colorLogo_lc.png" />
+            <Image cursor={"pointer"} src="https://www.timecamp.com/kb/wp-content/uploads/2020/11/colorLogo_lc.png" />
           </Flex>
 
           <Flex
