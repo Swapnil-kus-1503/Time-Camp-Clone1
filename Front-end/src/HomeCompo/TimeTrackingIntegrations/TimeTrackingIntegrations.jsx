@@ -10,7 +10,6 @@ function TimeTrackingIntegrations() {
 
                     <Text fontWeight={"medium"} color={"#25CF60"}>  TIME TRACKING INTEGRATIONS</Text>
                     <Box>
-
                         <Heading size={"xl"}>Easy and quick integration </Heading>
                         <Heading size={"xl"}>with more than 100 apps</Heading>
                         <Heading size={"xl"}>and work tools</Heading>
