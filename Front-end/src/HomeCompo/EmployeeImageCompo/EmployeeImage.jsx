@@ -5,9 +5,7 @@ function EmployeeImage() {
     return (
         <div>
             <Box
-
                 overflowX={"hidden"}
-
                 bgSize={"cover"}
                 bgPosition={"center"}
                 bgRepeat={"no-repeat"}
