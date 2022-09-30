@@ -44,6 +44,7 @@ export default function Navbar() {
             alignItems={"center"}
             w={{ base: "30%", sm: "30%", md: "18%", lg: "12%" }}
             h={"100px"}
+            onClick={() => navigate("/")}
           >
             <Image src="https://www.timecamp.com/kb/wp-content/uploads/2020/11/colorLogo_lc.png" />
           </Flex>
@@ -137,58 +138,44 @@ export default function Navbar() {
               w={{ sm: "94%", md: "84%" }}
               ml={{ sm: "3%", md: "8%" }}
             >
-              <Stack direction={"column"} gap={"4"} align={"flex-start"}>
-                <Features />
-                <Link
-                  _hover={{
-                    bg: "white",
-                    color: "green",
-                    textDecoration: "none",
-                  }}
-                >
-                  <Text fontWeight={500} bg={"white"}>
-                    Pricing
-                  </Text>
-                </Link>
-                <Integrations />
-                <Link
-                  _hover={{
-                    bg: "white",
-                    color: "green",
-                    textDecoration: "none",
-                  }}
-                >
-                  <Text fontWeight={500} bg={"white"}>
-                    Blog
-                  </Text>
-                </Link>
+              <Features />
 
-                <Link
-                  _hover={{
-                    bg: "white",
-                    color: "green",
-                    textDecoration: "none",
-                  }}
-                >
-                  <Text fontWeight={500} bg={"white"}>
-                    Book a Demo
-                  </Text>
-                </Link>
+              <Text
+                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                cursor={"pointer"}
+                fontWeight={"500"}
+                bg={"white"}
+                onClick={() => navigate("/pricing")}
+              >
+                Pricing
+              </Text>
 
-                <Text
-                  onClick={() => navigate("/login")}
-                  _hover={{
-                    bg: "white",
-                    color: "green",
-                    textDecoration: "none",
-                  }}
-                  cursor={"pointer"}
-                  fontWeight={"500"}
-                  bg={"white"}
-                >
-                  Sign in
+              <Integrations />
+              <Link
+                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+              >
+                <Text fontWeight={500} bg={"white"}>
+                  Blog
                 </Text>
-              </Stack>
+              </Link>
+
+              <Link
+                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+              >
+                <Text fontWeight={500} bg={"white"}>
+                  Book a Demo
+                </Text>
+              </Link>
+
+              <Text
+                onClick={() => navigate("/login")}
+                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
+                cursor={"pointer"}
+                fontWeight={"500"}
+                bg={"white"}
+              >
+                Sign in
+              </Text>
 
               <Button
                 bg={"rgb(247,184,1)"}

@@ -6,6 +6,7 @@ import LoginInPage from "./LoginPage/LoginPage";
 import Singup from "./SignUpPage/Singup";
 import TimeTracking from "./pages/TimeTracking";
 import DummyDashboard from "./DummyDashboard";
+import Pricing from "./pages/Pricing";
 function Allroutes() {
   return (
     <div>
@@ -22,6 +23,7 @@ function Allroutes() {
         <Route path="/login" element={<LoginInPage />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="/time-tracking" element={<TimeTracking />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route
           path="/dashboard"
           element={
