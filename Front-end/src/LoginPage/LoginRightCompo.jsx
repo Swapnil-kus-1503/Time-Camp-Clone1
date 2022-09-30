@@ -32,7 +32,7 @@ function LoginRightCompo() {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const [errorMsg, setErrorMsg] = useState("");
-  const { googleSignIn} = UserAuth();
+  const { googleSignIn } = UserAuth();
 
   const handleGoogleSignIn = async () => {
     try {
@@ -51,27 +51,31 @@ function LoginRightCompo() {
     password: "",
   });
   const handleSubmit = () => {
+    setErrorMsg("")
     if (!values.email || !values.password) {
+
       setErrorMsg("All the fields are necessary ");
-      ontoggle()
+      onToggle()
       setType("warning")
-      return;
+    
     }
     else if (values.password.length < 6) {
+
       setErrorMsg("Password should me atleast 6 letters");
       onToggle();
       setType("warning");
     }
-    setErrorMsg("");
+
     signInWithEmailAndPassword(auth, values.email, values.password)
       .then(() => {
-        ontoggle()
+        onToggle()
         setType("success")
         navigate("/");
       })
       .catch((er) => {
-        setErrorMsg(er.message)
-        ontoggle()
+
+
+        onToggle()
         setType("error")
         setErrorMsg(er.message)
       });
@@ -79,13 +83,15 @@ function LoginRightCompo() {
   const handleForgot = (email) => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
+
         setErrorMsg("Email sent")
-        ontoggle()
+        onToggle()
         setType("success")
       })
       .catch((er) => {
+
         setErrorMsg(er.message)
-        ontoggle()
+        onToggle()
         setType("error")
       });
   };
