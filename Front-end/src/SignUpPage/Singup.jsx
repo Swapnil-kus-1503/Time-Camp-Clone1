@@ -1,21 +1,16 @@
 import {
-  Alert,
-  AlertDescription,
-  AlertIcon,
-  AlertTitle,
+
   Box,
   Center,
-  CloseButton,
-  SlideFade,
-  useDisclosure,
+
+ 
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React from "react";
 import SignUpForm from "./SignupForm";
 import SignUpNavbar from "./SignupNav";
 
 const Singup = () => {
-  const { isOpen, onToggle } = useDisclosure();
-  const [type, setType] = useState("");
+
 
   return (
     <Box minW={"100%"}>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   Accordion, Center,
-  AccordionButton, AccordionIcon, Heading, AccordionItem, AccordionPanel, Box, Text, Flex, Image
+  AccordionButton, AccordionIcon, Heading, AccordionItem, AccordionPanel, Box, Text, Flex, 
 
 } from '@chakra-ui/react'
 
