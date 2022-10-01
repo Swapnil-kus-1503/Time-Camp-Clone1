@@ -633,3 +633,22 @@ a.btn-highlighted, button.btn-highlighted {
   font-weight: 600;
   color: #00bf71;
 }
+
+@media (max-width: 767px), (min-width: 768px) and (max-width: 991px){
+#top .features-top {
+    flex-direction: column;
+    justify-content: center;
+}
+#top .features-top .wrapper {
+  width: auto !important
+}
+#reviews .container .row .carousel .customer-review,
+#reviews .container .row .carousel .perk-content,
+#features-perks .container .row .carousel .customer-review,
+#features-perks .container .row .carousel .perk-content {
+  padding: 1.5rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+}
