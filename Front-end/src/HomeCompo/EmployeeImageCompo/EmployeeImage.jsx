@@ -29,27 +29,28 @@ function EmployeeImage() {
         <Flex
           // border={"2px"}
           w={"80%"}
-          margin={"auto"}
+          // margin={"auto"}
           justifyContent={"space-between"}
           flexWrap={"wrap"}
           direction={["column", "column", "column", "row"]}
         >
           <Box
+            border={"2px"}
             borderRadius={"6px"}
             backdropBlur={"3px"}
             bgColor={"rgba(255, 255, 255, 0.9)"}
             flex={"48%"}
-            p={"2rem"}
-            w={["100%", "100%", "100%", "40%"]}
+            p={["1rem","1rem","1rem","2rem"]}
+            w={["100%", "100%", "100%", "60%"]}
           >
             <Text
               fontSize={"14px"}
               fontWeight={"700"}
               lineHeight={"1.1"}
               w={"93%"}
-              mr={"auto"}
-              mb={"0.5rem"}
-              mt={"0"}
+              // mr={"auto"}
+              // mb={"0.5rem"}
+              // mt={"0"}
             >
               Free time tracking software
             </Text>
@@ -59,15 +60,15 @@ function EmployeeImage() {
               fontSize={"45px"}
               lineHeight={"1.1"}
               w={"93%"}
-              mr={"auto"}
-              mb={"0.5rem"}
-              mt={"20px"}
+              // mr={"auto"}
+              // mb={"0.5rem"}
+              // mt={"20px"}
             >
               Increase project profitability with time tracking
             </Text>
             <Box
               p={"1rem"}
-              mb={"2rem"}
+              // mb={"2rem"}
               fontSize={"1rem"}
               fontWeight={"400"}
               lineHeight={"1.5"}
@@ -107,7 +108,9 @@ function EmployeeImage() {
               />
 
             </Box>
-            <Text my="10" fontSize="13px" color={"#767676"}>
+            <Text 
+            my="10" 
+            fontSize="13px" color={"#767676"}>
               By signing up you agree to our{" "}
               <b color={"#25cf60"} font-weight={"100"}>
                 Terms and Conditions
@@ -231,7 +234,7 @@ function EmployeeImage() {
         </Flex>
       </Box>
       <SocialProof />
-      <Center mt={["1rem","2.5rem","4rem","7rem"]}>
+      <Center mt={["1rem", "2.5rem", "4rem", "7rem"]}>
         <SimpleGrid
           columns={["1", "1", "2"]}
           borderRadius={"2xl"}
