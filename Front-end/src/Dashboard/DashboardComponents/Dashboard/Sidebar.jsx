@@ -22,7 +22,7 @@ const Sidebar = ({ setboxWidth, currComp }) => {
   return (
     <Box
       minH={"100vH"}
-      border={"2px"}
+  
       //  gap="20px"
       width={toggle ? "80px" : "270px"}
       boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
