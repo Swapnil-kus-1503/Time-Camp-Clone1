@@ -93,4 +93,51 @@ export const dataa = {
         threeDes:"Variables to use in reports",
     }
   },
+  "productivity-tracking": {
+    headingFeatures: "Productivity tracking",
+    headingFeaturesp:
+      "Keep track of your daily activities at work. Gain insights on how you allocate your time and stay focused on what matters.",
+    TopImg:
+      "https://cdn-m.timecamp.com/img/greenbranding/features/productivity-tracking-header.svg",
+    QuickLook: {
+      one: "Website and app usage monitoring",
+      oneDes:
+        "Precisely track time spent on apps. websites and documents.",
+    two:"Productivity assistant",
+      twoDes:
+        "Set up goals, measure productive time and idle time for maximum transparency.",
+      three: "Idle time tracking",
+      threeDes:
+        "Track inactivity time and report time spent on meetings and offline activities.",
+      four: "Private time",
+      fourDes:
+        "Turn on the private mode or turn off the app completely when you want to take a break or do the private stuff.",
+    },
+    features:{
+        one: "Website and app usage monitoring",
+        oneDes:
+          "Master your own productivity thanks to TimeCamp's computer activity monitoring. Track time spent on apps, websites and documents and refine your daily performance.",
+        oneImg:"https://cdn-m.timecamp.com/img/greenbranding/features/dailyPerformance.png",
+        two: "Productivity tools",
+        twoDes:
+          "Track time spent on productive activities, set up goals, and measure unproductive/idle time. Become your own coach when it comes to staying productive and focused.",
+        twoImg:"https://cdn-m.timecamp.com/img/greenbranding/features/productivityTools.png",
+        three: "Idle time tracking",
+        threeDes:
+          "Do you want to know, what is the actual time spent on work to bill clients accurately? With idle time tracking, you can track time only when your users are working on the computer.",
+        threeImg:"https://cdn-m.timecamp.com/img/greenbranding/canbanBoard.png",
+        four: "Optional screenshots",
+        fourDes:
+        "Do you want to check the status of your work without even asking your teammates? Turn on the screenshots to get the transparency of your teamwork.",
+        fourImg:"https://cdn-m.timecamp.com/img/greenbranding/features/optionalScreenshots.png",
+    },
+    steps:{
+        one:"+20%",
+        oneDes:"Time spent on productive activities per day",
+        two:"-49%",
+        twoDes:"Time spent on websites",
+        three:"-79%",
+        threeDes:"Time spent on unproductive activities",
+    }
+  },
 };
