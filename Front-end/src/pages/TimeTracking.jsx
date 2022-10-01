@@ -9,10 +9,13 @@ import QuickLook from "../components/timeTracker/QuickLook";
 import ExtraHeader from "../components/timeTracker/ExtraHeader";
 import Integrations from "../components/timeTracker/Integrations";
 import BottomCta from "../components/timeTracker/BottomCta";
+import Navbar from "../HomeCompo/Navbar/Navbar";
+import Footer from "../HomeCompo/Footer/Footer";
 
 const TimeTracking = () => {
   return (
     <>
+      <Navbar />
       <Top />
       <SocialProof />
       <QuickLook />
@@ -24,6 +27,7 @@ const TimeTracking = () => {
       <ExtraHeader />
       <Integrations />
       <BottomCta />
+      <Footer />
     </>
   );
 };

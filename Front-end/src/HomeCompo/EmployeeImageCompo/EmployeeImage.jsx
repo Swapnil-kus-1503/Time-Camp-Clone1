@@ -106,7 +106,6 @@ function EmployeeImage() {
                 px="2"
                 py="2"
               />
-
             </Box>
             <Text 
             my="10" 
@@ -264,6 +263,7 @@ function EmployeeImage() {
               color="white"
               borderRadius={"full"}
               size={"lg"}
+              _hover={{bg:"orange"}}
             >
               Book a Demo
             </Button>

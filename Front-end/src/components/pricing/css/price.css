@@ -1,0 +1,212 @@
+.pricing section#top {
+    background-color: #f3f3f3;
+    padding: 6rem 0 4rem;
+}
+section#top>.container>.row {
+    justify-content: center;
+}
+.pricing section#top .container .row .col-sm-12 {
+    text-align: center;
+}
+section#top>.container>.row h1, section#top>.container>.row h2.subheader {
+    font-weight: 700;
+    color: #1b1b20;
+    font-size: 52px;
+    line-height: 1.1;
+    width: 93%;
+    margin-right: auto;
+}
+.pricing section#top .container .row .col-sm-12 h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 auto 3.5rem;
+    width: 82%;
+}
+
+.pricing section#top .container .row .col-sm-12 p {
+    font-size: 20px;
+    font-weight: 400;
+    width: 77%;
+    margin: 0 auto;
+}
+
+.pricing section#bottomCta{
+    margin: 3rem 0;
+}
+
+.pricing section#customer-story {
+    padding-top: 2rem;
+    background-color: #fafffd;
+}
+
+.pricing section#customer-story .container {
+    position: relative;
+}
+
+.pricing section#customer-story .container .row {
+    justify-content: space-evenly;
+}
+.pricing section#customer-story .container .row .col-sm-12 h2 {
+    font-size: 41px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.pricing section#customer-story .container .row .story {
+    border-radius: 10px;
+    box-shadow: 20px 20px 40px 0 rgb(0 0 0 / 10%);
+    background-color: #fff;
+    padding: 0 2rem;
+}
+
+.pricing section#customer-story .container .row .story h2 {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: nunito sans,sans-serif;
+    margin: 4rem auto 1.5rem;
+}
+
+.pricing section#customer-story .container .row .story p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.pricing section#customer-story .container .row .story .wrapper {
+    margin-bottom: 3.5rem;
+    justify-content: right;
+    display: flex;
+}
+.pricing section#customer-story .container .row .story .wrapper .text p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.pricing section#customer-story .container .row .story .wrapper .text p span {
+    font-weight: 700;
+}
+.pricing section#customer-story .container .row .story .wrapper .text p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+section#table {
+    padding-top: 12rem;
+}
+
+section#table .container {
+    max-width: 100%;
+}
+section#table .container .row .col-sm-12 h2 {
+    font-size: 41px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.comparison {
+    margin: auto;
+    width: 80%;
+}
+section#table .container .row .comparison {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+section#table .container .row .comparison table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+th {
+    text-align: left;
+}
+
+section#table .container .row .comparison table thead tr th {
+    border-right: 1px solid #ddd;
+    empty-cells: show;
+    padding: 10px;
+}
+section#table .container .row .comparison table thead tr th.tl {
+    border-bottom: none;
+}
+section#table .container .row .comparison table thead tr th.compare-heading {
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: unset;
+    padding-top: 1rem;
+    text-align: center;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.red {
+    color: #eb5160;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.yellow {
+    color: #f7b801;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.green {
+    color: #00bf71;
+}
+section#table .container .row .comparison table thead tr th.compare-heading.blue {
+    color: #3c91e6;
+}
+
+section#table .container .row .comparison table thead tr th.price-info {
+    text-align: center;
+    border-bottom: none;
+}
+section#table .container .row .comparison table thead tr th.price-info .add-margin {
+    margin-bottom: 2rem;
+}
+section#table .container .row .comparison table thead tr th.price-info .price-now {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 auto;
+}
+section#table .container .row .comparison table thead tr th.price-info .price-anually {
+    font-size: 12;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+a.btn-filled.blue, button.btn-filled.blue {
+    background-color: #3c91e6;
+}
+a.btn-filled, button.btn-filled {
+    border-radius: 26px;
+    padding: 15px 40px;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+section#table .container .row .comparison table tbody tr td {
+    font-size: 14px;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+    empty-cells: show;
+    padding: 10px;
+}
+section#table .container .row .comparison table tbody tr td.head-row {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 2rem 10px;
+}
+section#table .container .row .comparison table tbody tr td:first-child {
+    text-align: left;
+}
+section#table .container .row .comparison table tbody tr:nth-child(2n) {
+    background-color: #f3f3f3;
+}
+section#table .container .row .comparison table tbody tr td {
+    font-size: 14px;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+    empty-cells: show;
+    padding: 10px;
+}
+section#table .container .row .comparison .tick {
+    color: #1b1b20;
+}
+

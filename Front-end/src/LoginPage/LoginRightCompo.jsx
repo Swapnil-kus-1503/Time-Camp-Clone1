@@ -1,7 +1,6 @@
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import {
   Alert,
-
   AlertIcon,
   AlertTitle,
   Box,
@@ -51,16 +50,11 @@ function LoginRightCompo() {
     password: "",
   });
   const handleSubmit = () => {
-
     if (!values.email || !values.password) {
-
       setErrorMsg("All the fields are necessary ");
-      onToggle()
-      setType("warning")
-
-    }
-    else if (values.password.length < 6) {
-
+      onToggle();
+      setType("warning");
+    } else if (values.password.length < 6) {
       setErrorMsg("Password should me atleast 6 letters");
       onToggle();
       setType("warning");
@@ -68,47 +62,37 @@ function LoginRightCompo() {
 
     signInWithEmailAndPassword(auth, values.email, values.password)
       .then(() => {
-        setErrorMsg("Login successful")
-        onToggle()
-        setType("success")
+        setErrorMsg("Login successful");
+        onToggle();
+        setType("success");
+
         navigate("/dashboard");
       })
       .catch((er) => {
-
-
-        onToggle()
-        setType("error")
-        setErrorMsg(er.message)
+        onToggle();
+        setType("error");
+        setErrorMsg(er.message);
       });
   };
   const handleForgot = (email) => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
-
-        onToggle()
-        setErrorMsg("Email sent")
-        setType("success")
+        onToggle();
+        setErrorMsg("Email sent");
+        setType("success");
       })
       .catch((er) => {
-
-        setErrorMsg(er.message)
-        onToggle()
-        setType("error")
+        setErrorMsg(er.message);
+        onToggle();
+        setType("error");
       });
   };
   return (
     <Flex direction={"column"} align={"center"}>
-      <Box >
+      <Box>
         <SlideFade in={isOpen} offsetY="20px">
           <Center>
-            <Box
-              color="black"
-
-
-
-              rounded="md"
-              shadow="md"
-            >
+            <Box color="black" rounded="md" shadow="md">
               {type === "success" ? (
                 <Alert
                   status={"success"}
@@ -118,13 +102,10 @@ function LoginRightCompo() {
                   display="block"
                 >
                   <Flex align={"center"}>
-
                     <AlertIcon />
                     <AlertTitle>{errorMsg}</AlertTitle>
 
-                    <CloseButton
-                      onClick={onClose}
-                    ></CloseButton>
+                    <CloseButton onClick={onClose}></CloseButton>
                   </Flex>
                 </Alert>
               ) : type === "warning" ? (
@@ -136,13 +117,9 @@ function LoginRightCompo() {
                   display="block"
                 >
                   <Flex align={"center"}>
-
                     <AlertIcon />
                     <AlertTitle>{errorMsg}</AlertTitle>
-                    <CloseButton
-                      onClick={onClose}
-
-                    ></CloseButton>
+                    <CloseButton onClick={onClose}></CloseButton>
                   </Flex>
                 </Alert>
               ) : (
@@ -154,12 +131,9 @@ function LoginRightCompo() {
                   display="block"
                 >
                   <Flex align={"center"}>
-
                     <AlertIcon />
                     <AlertTitle>{errorMsg}</AlertTitle>
-                    <CloseButton
-                      onClick={onClose}
-                    ></CloseButton>
+                    <CloseButton onClick={onClose}></CloseButton>
                   </Flex>
                 </Alert>
               )}
@@ -207,18 +181,17 @@ function LoginRightCompo() {
           <InputGroup>
             <Input
               placeholder="Password"
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               onChange={(e) =>
                 setValues((prev) => ({ ...prev, password: e.target.value }))
               }
             />
-            <InputRightElement h={'full'}>
+            <InputRightElement h={"full"}>
               <Button
                 size={"lg"}
-                variant={'icono'}
-                onClick={() =>
-                  setShowPassword((showPassword) => !showPassword)
-                }>
+                variant={"icono"}
+                onClick={() => setShowPassword((showPassword) => !showPassword)}
+              >
                 {showPassword ? <ViewIcon bgSize={"2px"} /> : <ViewOffIcon />}
               </Button>
             </InputRightElement>
@@ -237,6 +210,7 @@ function LoginRightCompo() {
             size={"lg"}
             borderRadius={"3xl"}
             bg={"#25CF60"}
+            _hover={{ bgColor: "#1da44c" }}
           >
             Login
           </Button>

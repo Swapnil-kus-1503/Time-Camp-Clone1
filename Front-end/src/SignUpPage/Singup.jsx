@@ -1,17 +1,9 @@
-import {
-
-  Box,
-  Center,
-
- 
-} from "@chakra-ui/react";
+import { Box, Center } from "@chakra-ui/react";
 import React from "react";
 import SignUpForm from "./SignupForm";
 import SignUpNavbar from "./SignupNav";
 
 const Singup = () => {
-
-
   return (
     <Box minW={"100%"}>
       <SignUpNavbar />
