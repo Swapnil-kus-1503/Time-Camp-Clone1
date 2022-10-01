@@ -20,7 +20,9 @@ const Pricing = () => {
       <BottomCta />
       <CustomerStory />
       <Table />
-      <FAQCompo />
+      <div className="container">
+        <FAQCompo />
+      </div>
       <Footer />
     </div>
   );
