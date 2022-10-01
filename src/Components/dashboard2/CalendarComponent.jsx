@@ -1,6 +1,6 @@
 import { Button,Box,Heading, Menu, MenuButton, MenuList } from '@chakra-ui/react';
 import React,{ useState } from 'react';
-import styles from "../Styles/ScheduleComponent.module.css"
+import styles from "./Styles/ScheduleComponent.module.css"
 import { Calendar} from "react-calendar";
 import 'react-calendar/dist/Calendar.css'
 import { RiArrowDropDownLine } from "react-icons/ri";

@@ -1,6 +1,6 @@
 import { Box,Button,Menu,MenuButton,  MenuList,} from '@chakra-ui/react'
 import React from 'react';
-import styles from "../Styles/ScheduleComponent.module.css";
+import styles from "./Styles/ScheduleComponent.module.css";
 import { FaRegUser } from "react-icons/fa";
 import {RiArrowDropDownLine} from "react-icons/ri";
 import { FiRefreshCw } from "react-icons/fi";

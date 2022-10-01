@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Divider, Heading,Menu,MenuButton,IconButton} from "@chakra-ui/react";
-import styles from "../Styles/Header.module.css";
+import styles from "./Styles/Header.module.css";
 import {FiUserPlus,} from "react-icons/fi";
 import { Settings } from './Settings';
 import { Help } from './Help';

@@ -1,6 +1,6 @@
 import { Box, Button, Flex} from '@chakra-ui/react'
 import React from 'react';
-import styles from "../Styles/Trial.module.css"
+import styles from "./Styles/Trial.module.css";
 
 export const Trial = () => {
   return (

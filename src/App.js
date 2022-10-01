@@ -1,7 +1,7 @@
 
 import './App.css';
-import { Header } from './dashboard2/Components/Header';
-import { ScheduleComponent } from './dashboard2/Components/ScheduleComponent';
+import { Header } from './Components/dashboard2/Header';
+import { ScheduleComponent } from './Components/dashboard2/ScheduleComponent';
 
 
 function App() {
