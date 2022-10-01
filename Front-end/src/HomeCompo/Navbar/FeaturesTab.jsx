@@ -25,13 +25,12 @@ export default function Features() {
       <Menu isOpen={isOpen}>
         <MenuButton
           varient="ghost"
-       
           fontWeight="500"
           onMouseEnter={onOpen}
           onMouseLeave={onClose}
           backgroundColor="white"
           border={"none"}
-          _hover={{ backgroundColor:"white",color:"black" }}
+          _hover={{ backgroundColor:"white",color:"green" }}
           p={0}
         >
           Features

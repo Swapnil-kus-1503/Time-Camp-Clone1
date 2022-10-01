@@ -24,7 +24,7 @@ function FAQCompo() {
         <Accordion
           allowToggle
           p={["1", "1", "10", "24"]}
-          // pl={["1", "1", "10", "28"]} pr={["1", "1", "10", "28"]}
+         
         >
           <Box>
             <AccordionItem minH={"100%"}>

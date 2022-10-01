@@ -26,7 +26,7 @@ function SSLUseTimeCamp() {
             ml={["1px", "1px", "10px", "40px"]}
             bgRepeat="no-repeat"
             bgImage={
-              "https://cdn-m.timecamp.com/img/landing-page/time-tracking-biz/group-9.png"
+              "./SSLimage/ssl.png"
             }
           >
             <Flex

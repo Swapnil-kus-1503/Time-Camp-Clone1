@@ -41,9 +41,9 @@ function WantAproductTour() {
           </Button>
         </Flex>
         <Image
-          w={["100%", "95%", "90%"]}
+          w={["100%", "95%", "86%"]}
           h={["220px", "360px", "450px"]}
-          src="https://cdn-m.timecamp.com/img/greenbranding/features/black_cta_img-platform.png"
+          src="./WantAprod/WantAProd.png"
         ></Image>
       </SimpleGrid>
     </div>
