@@ -24,16 +24,18 @@ export default function Integrations() {
       <Menu isOpen={isOpen}>
         <MenuButton
           varient="ghost"
-          as={Button}
-          rightIcon={<ChevronDownIcon />}
-          border="none"
+          fontWeight="500"
           onMouseEnter={onOpen}
           onMouseLeave={onClose}
           backgroundColor="white"
+          border={"none"}
           p={0}
-          _hover={{ color: "green", background: "white" }}
+          _hover={{ backgroundColor: "white", color: "black" }}
+
+
         >
           Integrations
+          <ChevronDownIcon />
         </MenuButton>
         <MenuList onMouseEnter={onOpen} onMouseLeave={onClose} p={0}>
           <MenuItem

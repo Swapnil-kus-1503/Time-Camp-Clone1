@@ -16,18 +16,19 @@ function EmployeeImage() {
   return (
     <div>
       <Box
+
         overflowX={"hidden"}
         bgSize={"cover"}
         bgPosition={"center"}
         bgRepeat={"no-repeat"}
         p={["1rem", "2rem", "5rem", "7rem"]}
-        minH={"900px"}
+        minH={["800px"]}
 
         fontSize={"md"}
         bgImg={"https://cdn-m.timecamp.com/img/backgroundTop.webp"}
       >
         <Flex
-
+          mt={["24", "20", "14", "0.5"]}
           justify={"space-between"}
 
           w={["100%", "90%", "90%", "93%"]}
