@@ -187,4 +187,51 @@ export const dataa = {
         threeDes:"Approval rate",
     }
   },
+  "invoicing": {
+    headingFeatures: "Smart invoicing",
+    headingFeaturesp:
+      "Nobody likes to spend countless hours on mundane paperwork. With TimeCamp, invoicing is easy. Just a few clicks.",
+    TopImg:
+      "https://cdn-m.timecamp.com/img/greenbranding/features/smart-invoicing-header.svg",
+    QuickLook: {
+      one: "Timesheet based invoices",
+      oneDes:
+        "Feed timesheet data into precise and transparent invoices.",
+      two:"Adjustable tax rates",
+      twoDes:
+        "Set up tax rates that are applicable in your country.",
+      three: "PayPal payments",
+      threeDes:
+        "Allow your clients to pay your invoice directly from the document via PayPal.",
+      four: "Fast exporting and sharing",
+      fourDes:
+        "To keep you focused on work, not on mundane tasks.",
+    },
+    features:{
+        one: "PayPal integration",
+        oneDes:
+          "Limit the necessary steps that your clients need to take to pay you. Now, PayPal payments for your invoices are available directly from your invoices.",
+        oneImg:"https://cdn-m.timecamp.com/img/greenbranding/features/paypalIntegrations.png",
+        two: "Customizable tax rates",
+        twoDes:
+          "Add tax rates relevant to current and local regulations",
+        twoImg:"https://cdn-m.timecamp.com/img/greenbranding/features/TaxCustomizable.png",
+        three: "Easy sharing and exports",
+        threeDes:
+          "Export your invoices to Xero and Quickbooks thanks to our wide array of integrations. Also, your invoices can be shared via e-mail, pdf or private link.",
+        threeImg:"https://cdn-m.timecamp.com/img/greenbranding/features/easyExport.png",
+        four: "Lock the timesheets",
+        fourDes:
+        "Once the timesheet is approved, it is locked. If the timesheet needs to be edited, only the manager can reopen it.",
+        fourImg:"https://cdn-m.timecamp.com/img/greenbranding/features/lockTheTimesheet.png",
+    },
+    steps:{
+        one:"2",
+        oneDes:"Types of timesheet",
+        two:"587k",
+        twoDes:"Approved timesheets",
+        three:"51%",
+        threeDes:"Approval rate",
+    }
+  },
 };
