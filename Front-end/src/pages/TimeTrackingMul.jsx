@@ -11,11 +11,15 @@ import Navbar from "../HomeCompo/Navbar/Navbar";
 import Steps from "../components/timeTrackerMul/Steps";
 import BottomCta from "../components/timeTrackerMul/BottomCta";
 import Reviews from "../components/timeTrackerMul/Reviews";
+import { useEffect } from "react";
 
 const TimeTrackingMul = () => {
   const { id } = useParams();
   const [data, setData] = useState(dataa[id]);
-  //   console.log(data.headingFeatures);
+
+  useEffect(() => {
+    setData(dataa[id]);
+  }, [id]);
   return (
     <>
       <Navbar />
