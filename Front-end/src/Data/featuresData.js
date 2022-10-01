@@ -46,4 +46,51 @@ export const dataa = {
         threeDes:"Click to track time",
     }
   },
+  "reporting": {
+    headingFeatures: "Insightful reports",
+    headingFeaturesp:
+      "Get essential information about your projects and teams. Stay in the know thanks to TimeCamp's reporting.",
+    TopImg:
+      "https://cdn-m.timecamp.com/img/greenbranding/features/insightful-reports-header.svg",
+    QuickLook: {
+      one: "+10 build-in report types",
+      oneDes:
+        "The most insightful build-in reports.",
+      two:"Custom built reports",
+      twoDes:
+        "Define and create new reports to match your own needs.",
+      three: "Easy sharing",
+      threeDes:
+        "Export and share as PDF, Excel or via e-mail.",
+      four: "Invite guests",
+      fourDes:
+        "Invite clients are show how their project perform.",
+    },
+    features:{
+        one: "10+ build-in report types",
+        oneDes:
+          "Regardless of what your use case for time tracking is, you’ll probably find a report that meets your needs! Need to check the time spent on a given project? There you go! Want to see how your team allocates their time? Not a problem! Need to run the payroll? Check! Holiday and leave reporting? We’ve got you covered.",
+        oneImg:"https://cdn-m.timecamp.com/img/greenbranding/PeopleByTask.png",
+        two: "Don't see a default report that matches your needs? Create one!",
+        twoDes:
+          "TimeCamp allows you to define and set up your own custom reports.",
+        twoImg:"https://cdn-m.timecamp.com/img/greenbranding/features/ownReports.png",
+        three: "Easy sharing",
+        threeDes:
+          "TimeCamp lets you export and share reports in any shape or form. PDFs, Excel spreadsheets or automated e-mails - choose your go-to method.",
+        threeImg:"https://cdn-m.timecamp.com/img/greenbranding/features/easyExport.png",
+        four: "Invite guests",
+        fourDes:
+        "With the guest role, you can invite your clients to their project reports in TimeCamp so they can check the current status of work when they want.",
+        fourImg:"https://cdn-m.timecamp.com/img/greenbranding/features/guestRole.png",
+    },
+    steps:{
+        one:"19",
+        oneDes:"Report types",
+        two:"10",
+        twoDes:"Years of collecting data",
+        three:"19",
+        threeDes:"Variables to use in reports",
+    }
+  },
 };
