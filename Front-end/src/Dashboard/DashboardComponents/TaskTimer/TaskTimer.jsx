@@ -67,9 +67,9 @@ const TaskTimer = () => {
             <input
               className={Styles.dashboardIP}
               placeholder="Select task and project"
-             
+
               value={task}
-              
+
               onChange={(e) => setTask(e.target.value)}
             ></input>
 
@@ -92,16 +92,16 @@ const TaskTimer = () => {
                 bgColor={"white"}
                 border={"1px solid gray"}
                 borderRadius={7}
-               
+
                 _hover={{ bgColor: "#eaeaea" }}
                 onClick={handleAddTask}
               ><FiPlus /></IconButton>
             </Tooltip>
             <Spacer />
-         
+
             <StopTimer />
           </HStack>
-          <Box>
+          <Box >
             {tasks.length === 0 ? (
               <Box>
                 <VStack justifyContent="center">
@@ -112,7 +112,7 @@ const TaskTimer = () => {
                       "https://cdn.timecamp.com/res/css/images/timesheet-classic-empty-state.svg"
                     }
                   ></Image>
-                  <Box ml={5} mt={-50}>
+                  <Box >
                     <Text fontSize={"24px"} fontWeight={500}>
                       No recent Time entries
                     </Text>
@@ -125,13 +125,13 @@ const TaskTimer = () => {
                 </VStack>
               </Box>
             ) : (
-              <Box mt={50} border={"1px solid gray"} borderRadius={10}>
+              <Box border={"1px solid gray"} borderRadius={10}>
                 {tasks.length > 0 &&
                   tasks.map((task) => <Task task={task} key={task.id} />)}
               </Box>
             )}
           </Box>
-          <HStack mt={"60px"}>
+          <HStack>
             <Tooltip
               label="new time entry"
               placement="bottom-start"
