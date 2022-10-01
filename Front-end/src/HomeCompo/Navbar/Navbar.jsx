@@ -34,7 +34,7 @@ export default function Navbar() {
         w={"100%"}
         background="rgb(255,255,255)"
       >
-        <TopNavbar />
+        {/* <TopNavbar /> */}
         <Flex
           h={"100px"}
           alignItems={"center"}
