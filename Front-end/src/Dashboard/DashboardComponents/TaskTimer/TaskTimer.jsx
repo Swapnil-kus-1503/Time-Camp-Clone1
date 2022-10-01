@@ -67,7 +67,7 @@ const TaskTimer = () => {
             <input
               className={Styles.dashboardIP}
               placeholder="Select task and project"
-           
+             
               value={task}
               
               onChange={(e) => setTask(e.target.value)}
@@ -92,10 +92,10 @@ const TaskTimer = () => {
                 bgColor={"white"}
                 border={"1px solid gray"}
                 borderRadius={7}
-                icon={<FiPlus />}
+               
                 _hover={{ bgColor: "#eaeaea" }}
                 onClick={handleAddTask}
-              ></IconButton>
+              ><FiPlus /></IconButton>
             </Tooltip>
             <Spacer />
          

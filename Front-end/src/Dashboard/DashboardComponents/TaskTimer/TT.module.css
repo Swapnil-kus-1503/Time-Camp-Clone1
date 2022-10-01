@@ -1,7 +1,9 @@
 .dashboardIP {
     height: 100%;
     width: 60%;
-    border: none;
+    border: 0;
+    outline: none;
+    font-size: 20px;
     
 
 }
