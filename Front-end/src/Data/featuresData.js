@@ -140,4 +140,51 @@ export const dataa = {
         threeDes:"Time spent on unproductive activities",
     }
   },
+  "rapid-timesheet-approvals": {
+    headingFeatures: "Smart timesheets",
+    headingFeaturesp:
+      "Whether you're a small team working on your dream product or a big, established business, you don't want to waste time manually filling out timesheets.",
+    TopImg:
+      "https://cdn-m.timecamp.com/img/greenbranding/features/smart-timesheets-header.svg",
+    QuickLook: {
+      one: "Daily and weekly timesheet approvals",
+      oneDes:
+        "Easy to submit and approve. Any time.",
+      two:"Comments and feedback",
+      twoDes:
+        "Discuss current timesheets when necessary",
+      three: "Automatic approvals and reminders",
+      threeDes:
+        "To keep you focused on work, not on mundane tasks.",
+      four: "Lock the timesheets",
+      fourDes:
+        "Make sure that no data was changed after granting approval.",
+    },
+    features:{
+        one: "Daily and weekly approvals",
+        oneDes:
+          "Approve your team's timesheets at any given period.",
+        oneImg:"https://cdn-m.timecamp.com/img/greenbranding/features/dailyAndWeeklyApprovals.png",
+        two: "Comments and feedback",
+        twoDes:
+          "If you spot an error or wrong time entry, you can reply with a comment to the employee's timesheet.",
+        twoImg:"https://cdn-m.timecamp.com/img/greenbranding/commentFeedback.png",
+        three: "Automatic approvals and reminders",
+        threeDes:
+          "Automate the approval process or set up notifications when your team's timesheets require approval.",
+        threeImg:"https://cdn-m.timecamp.com/img/greenbranding/features/automaticApprovals.png",
+        four: "Lock the timesheets",
+        fourDes:
+        "Once the timesheet is approved, it is locked. If the timesheet needs to be edited, only the manager can reopen it.",
+        fourImg:"https://cdn-m.timecamp.com/img/greenbranding/features/lockTheTimesheet.png",
+    },
+    steps:{
+        one:"2",
+        oneDes:"Types of timesheet",
+        two:"587k",
+        twoDes:"Approved timesheets",
+        three:"51%",
+        threeDes:"Approval rate",
+    }
+  },
 };
