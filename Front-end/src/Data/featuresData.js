@@ -234,4 +234,51 @@ export const dataa = {
         threeDes:"Approval rate",
     }
   },
+  "billing": {
+    headingFeatures: "Versatile billing",
+    headingFeaturesp:
+      "Successful projects are not only delivered on time and scope. They're profitable. By using TimeCamp's robust billing features, you can finally have a clear picture of your projects.",
+    TopImg:
+      "https://cdn-m.timecamp.com/img/greenbranding/features/versatile-billing-header.svg",
+    QuickLook: {
+      one: "Customizable billing rates",
+      oneDes:
+        "Set up billing rates for your team members, projects and clients.",
+      two:"Cost and timespan budgets",
+      twoDes:
+        "Define project costs and timespan budgets and track their performance.",
+      three: "Budget notifications",
+      threeDes:
+        "Stay notified when a project is about to overrun its time or cost budgets.",
+      four: "Revenue, cost and margin reporting",
+      fourDes:
+        "Transform the time data and billing rates into precise financial reports in just a few clicks.",
+    },
+    features:{
+        one: "Customizable billing rates",
+        oneDes:
+          "Ideal when you have different rates depending on your team's expertise, worker's seniority and skills as well as the project type and client.",
+        oneImg:"https://cdn-m.timecamp.com/img/greenbranding/features/InvoiceCustomizable.png",
+        two: "Budgeting",
+        twoDes:
+          "Staying on budget is what keeps your business healthy in the long run. Setup cost and timeline budgets for each project or account.",
+        twoImg:"https://cdn-m.timecamp.com/img/greenbranding/features/budgeting.png",
+        three: "Budget notifications",
+        threeDes:
+          "No one likes to be caught by surprise when a project overruns its budget. Stay one step ahead and set up notifications when a project is about to overrun.",
+        threeImg:"https://cdn-m.timecamp.com/img/greenbranding/features/budgetNotification.png",
+        four: "Financial reports on the go",
+        fourDes:
+        "Don't spend additional hours reporting the revenue or profit of a project. Use the gathered time data to create up to date financial reports.",
+        fourImg:"https://cdn-m.timecamp.com/img/greenbranding/financialReports.png",
+    },
+    steps:{
+        one:"$1M",
+        oneDes:"Billed by our clients",
+        two:"750k",
+        twoDes:"Projects delivered in budget",
+        three:"51%",
+        threeDes:"Approval rate",
+    }
+  },
 };
