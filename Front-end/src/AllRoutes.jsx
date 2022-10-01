@@ -7,7 +7,11 @@ import Singup from "./SignUpPage/Singup";
 import TimeTracking from "./pages/TimeTracking";
 import DummyDashboard from "./DummyDashboard";
 import Pricing from "./pages/Pricing";
+
+import Dashboard from "./Dashboard/DashboardComponents/Dashboard/Dashboard"
+
 import TimeTrackingMul from "./pages/TimeTrackingMul";
+
 function Allroutes() {
   return (
     <div>
@@ -25,7 +29,8 @@ function Allroutes() {
           path="/dashboard"
           element={
             <Protected>
-              <DummyDashboard />
+              {/* <DummyDashboard /> */}
+              <Dashboard />
             </Protected>
           }
         />

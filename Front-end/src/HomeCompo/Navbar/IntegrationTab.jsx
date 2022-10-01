@@ -30,9 +30,7 @@ export default function Integrations() {
           backgroundColor="white"
           border={"none"}
           p={0}
-          _hover={{ backgroundColor: "white", color: "black" }}
-
-
+          _hover={{ backgroundColor: "white", color: "green" }}
         >
           Integrations
           <ChevronDownIcon />
