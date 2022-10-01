@@ -281,4 +281,51 @@ export const dataa = {
         threeDes:"Approval rate",
     }
   },
+  "attendance": {
+    headingFeatures: "Attendance tracking",
+    headingFeaturesp:
+      "Regardless of your company's or team's size, TimeCamp will take care of managing your staff attendance so you don't have to.",
+    TopImg:
+      "https://cdn-m.timecamp.com/img/greenbranding/features/attendance-tracking-header.svg",
+    QuickLook: {
+      one: "Clock in-and-out",
+      oneDes:
+        "Now you can report your attendance at the office or remote with just one click.",
+      two:"Leave reporting",
+      twoDes:
+        "Allow your employees to apply for vacation and absence in a speedy manner. No more paperwork.",
+      three: "Payroll automation",
+      threeDes:
+        "You finally can stop dreading the end-of-month payroll calculation. TimeCamp is here to do it.",
+      four: "Overtime tracking",
+      fourDes:
+        "No need for additional reporting when someone needs to work extra hours. All done in one tool.",
+    },
+    features:{
+        one: "Clock in-and-out",
+        oneDes:
+          "If you're in need to keep track of when everyone enters or leaves the office, why spend gazillions on additional equipment? TimeCamp will do the job you need.",
+        oneImg:"https://cdn-m.timecamp.com/img/greenbranding/features/clockIn.png",
+        two: "Leave reporting",
+        twoDes:
+          "Who here likes filling out multiple documents when applying for a vacation? See, no one. That's why TimeCamp allows you to do everything with just a click.",
+        twoImg:"https://cdn-m.timecamp.com/img/greenbranding/features/leave.png",
+        three: "Payroll automation",
+        threeDes:
+          "No one enjoys the end-of-month hassle of calculating the payroll. Why not let TimeCamp do the heavy lifting?",
+        threeImg:"https://cdn-m.timecamp.com/img/greenbranding/features/budgeting.png",
+        four: "Overtime tracking",
+        fourDes:
+        "Keeping track of your team's overtime is essential for maintaining motivation and overall wellbeing. This is why we've added this feature so you can work easier.",
+        fourImg:"https://cdn-m.timecamp.com/img/greenbranding/features/overtimeTracking.png",
+    },
+    steps:{
+        one:"$1M",
+        oneDes:"Billed by our clients",
+        two:"750k",
+        twoDes:"Projects delivered in budget",
+        three:"51%",
+        threeDes:"Approval rate",
+    }
+  },
 };
