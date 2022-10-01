@@ -57,7 +57,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/one.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/one.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -65,7 +69,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/two.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/two.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -73,7 +81,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/three.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/three.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -81,7 +93,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/four.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/four.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -89,7 +105,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/five.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/five.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -97,7 +117,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/sisx.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/sisx.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -105,7 +129,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/seven.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/seven.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -113,7 +141,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/eight.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/eight.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -121,7 +153,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/nine.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/nine.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -129,7 +165,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/ten.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/ten.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -137,7 +177,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/eleven.png"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/eleven.png"
+            ></Image>
           </Box>
           <Box
             bg={"white"}
@@ -145,7 +189,11 @@ function TimeTrackingIntegrations() {
             boxSize={"115px"}
             borderRadius={"3xl"}
           >
-            <Image p={"7"} src="./TimeTracking/twelve.jpg"></Image>
+            <Image
+              cursor={"pointer"}
+              p={"7"}
+              src="./TimeTracking/twelve.jpg"
+            ></Image>
           </Box>
         </SimpleGrid>
       </SimpleGrid>

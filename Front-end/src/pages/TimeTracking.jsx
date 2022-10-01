@@ -11,6 +11,7 @@ import Integrations from "../components/timeTracker/Integrations";
 import BottomCta from "../components/timeTracker/BottomCta";
 import Navbar from "../HomeCompo/Navbar/Navbar";
 import Footer from "../HomeCompo/Footer/Footer";
+import "../components/timeTracker/css/features.css";
 
 const TimeTracking = () => {
   return (

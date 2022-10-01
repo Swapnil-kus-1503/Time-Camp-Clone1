@@ -1,19 +1,15 @@
 import React from "react";
 
-const Top = () => {
+const Top = ({ headingFeatures, headingFeaturesp, TopImg }) => {
+  // console.log(headingFeatures);
   return (
     <section id="top">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 features-top">
             <div className="wrapper">
-              <h1 className="heading-features">
-                Time tracker your team will actually use
-              </h1>
-              <p>
-                Track time against your projects and create reports and
-                timesheets in seconds.
-              </p>
+              <h1 className="heading-features">{headingFeatures}</h1>
+              <p>{headingFeaturesp}</p>
               <div className="form">
                 <form className="inline-form-tc">
                   <div className="form-wrapper">
@@ -63,10 +59,7 @@ const Top = () => {
             </div>
             <div className="wrapper">
               <div className="image-content">
-                <img
-                  src="https://cdn-m.timecamp.com/img/greenbranding/features/features-time-tracking.svg"
-                  alt="features time tacking timesheets"
-                ></img>
+                <img src={TopImg} alt="features time tacking timesheets"></img>
               </div>
             </div>
           </div>

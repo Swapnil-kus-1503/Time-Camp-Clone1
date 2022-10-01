@@ -34,7 +34,7 @@ export default function Navbar() {
         w={"100%"}
         background="rgb(255,255,255)"
       >
-        <TopNavbar />
+        {/* <TopNavbar /> */}
         <Flex
           h={"100px"}
           alignItems={"center"}
@@ -48,7 +48,10 @@ export default function Navbar() {
             h={"100px"}
             onClick={() => navigate("/")}
           >
-            <Image cursor={"pointer"} src="https://www.timecamp.com/kb/wp-content/uploads/2020/11/colorLogo_lc.png" />
+            <Image
+              cursor={"pointer"}
+              src="https://www.timecamp.com/kb/wp-content/uploads/2020/11/colorLogo_lc.png"
+            />
           </Flex>
 
           <Flex

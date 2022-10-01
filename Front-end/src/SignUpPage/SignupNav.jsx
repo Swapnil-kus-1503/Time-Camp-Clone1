@@ -14,6 +14,7 @@ function SignUpNavbar() {
     >
       <Box>
         <Image
+          onClick={() => navigate("/")}
           cursor={"pointer"}
           ml={["1", "1", "20", "40"]}
           maxH={"20"}

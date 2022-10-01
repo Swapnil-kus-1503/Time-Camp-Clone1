@@ -6,7 +6,7 @@ p {
   margin-bottom: 1rem;
 }
 #top {
-  padding: 6rem 0;
+  padding: 12rem 0 6rem 0;
   font-weight: 300;
   font-family: nunito sans, sans-serif;
 }
@@ -270,7 +270,7 @@ button.btn-filled.yellow {
   font-size: 48px;
   font-weight: 700;
   color: #1b1b20;
-  z-index: 1;
+  /* z-index: 1; */
   position: relative;
 }
 #feature-section .container .row .col-lg-5 div.text a:active,
@@ -454,7 +454,7 @@ section#extra_header .container .row .col-sm-12 {
   font-size: 36px;
   font-weight: 700;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 a.btn-filled, button.btn-filled {
   border-radius: 26px;
@@ -594,4 +594,61 @@ a.btn-highlighted, button.btn-highlighted {
   color: #1b1b20!important;
   border: 1px solid #f7b801;
   border-radius: 26px;
+}
+
+#singleFeatures #steps {
+  position: relative;
+}
+#singleFeatures #steps .container {
+  background-color: #1b1b20;
+  border-radius: 6px;
+}
+#singleFeatures #steps .container .row {
+  padding: 3rem 0;
+  border-radius: 6px;
+  position: relative;
+  /* z-index: 1; */
+  justify-content: center;
+}
+#singleFeatures #steps .container .row .col-lg-4 .group {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 59%;
+}
+#singleFeatures #steps .container .row .col-lg-4 .group p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00bf71;
+}
+#singleFeatures #steps .container .row .col-lg-4 .group .value-stats {
+  font-size: 42px;
+  font-weight: 800;
+  color: #00bf71;
+}
+.features #singleFeatures #steps .container .row .col-lg-4 .group p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00bf71;
+}
+
+@media (max-width: 767px), (min-width: 768px) and (max-width: 991px){
+#top .features-top {
+    flex-direction: column;
+    justify-content: center;
+}
+#top .features-top .wrapper {
+  width: auto !important
+}
+#reviews .container .row .carousel .customer-review,
+#reviews .container .row .carousel .perk-content,
+#features-perks .container .row .carousel .customer-review,
+#features-perks .container .row .carousel .perk-content {
+  padding: 1.5rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
 }
