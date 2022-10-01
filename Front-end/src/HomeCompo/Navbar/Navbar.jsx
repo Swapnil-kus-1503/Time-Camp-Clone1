@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
 import { useNavigate } from "react-router-dom";
+import TopNavbar from "./TopNavbar";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -30,11 +31,10 @@ export default function Navbar() {
         position={"fixed"}
         zIndex={"1"}
         bg={useColorModeValue("gray.100", "gray.900")}
-        px={4}
-
-        // border="2px solid black"
+        w={"100%"}
         background="rgb(255,255,255)"
       >
+        <TopNavbar />
         <Flex
           h={"100px"}
           alignItems={"center"}
