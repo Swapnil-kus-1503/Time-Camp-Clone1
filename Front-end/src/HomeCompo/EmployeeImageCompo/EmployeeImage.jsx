@@ -20,37 +20,34 @@ function EmployeeImage() {
         bgSize={"cover"}
         bgPosition={"center"}
         bgRepeat={"no-repeat"}
-        p={"6rem"}
+        p={["1rem", "2rem", "5rem", "7rem"]}
         minH={"900px"}
-        // border="2px"
+
         fontSize={"md"}
         bgImg={"https://cdn-m.timecamp.com/img/backgroundTop.webp"}
       >
         <Flex
-          // border={"2px"}
-          w={"80%"}
-          // margin={"auto"}
-          justifyContent={"space-between"}
-          flexWrap={"wrap"}
+
+          justify={"space-between"}
+
+          w={["100%", "90%", "90%", "93%"]}
+
           direction={["column", "column", "column", "row"]}
         >
           <Box
-            border={"2px"}
+            // border={"2px"}
             borderRadius={"6px"}
             backdropBlur={"3px"}
             bgColor={"rgba(255, 255, 255, 0.9)"}
             flex={"48%"}
-            p={["1rem","1rem","1rem","2rem"]}
-            w={["100%", "100%", "100%", "60%"]}
+            p={["3rem", "1rem", "1rem", "2rem"]}
+
+            w={["100%", "100%", "100%", "50%"]}
           >
             <Text
               fontSize={"14px"}
               fontWeight={"700"}
-              lineHeight={"1.1"}
-              w={"93%"}
-              // mr={"auto"}
-              // mb={"0.5rem"}
-              // mt={"0"}
+
             >
               Free time tracking software
             </Text>
@@ -59,15 +56,13 @@ function EmployeeImage() {
               color={"#1b1b20"}
               fontSize={"45px"}
               lineHeight={"1.1"}
-              w={"93%"}
-              // mr={"auto"}
-              // mb={"0.5rem"}
-              // mt={"20px"}
+              w={["99%", "99%", "96%", "93%"]}
+
             >
               Increase project profitability with time tracking
             </Text>
             <Box
-              p={"1rem"}
+              p={["0rem", "0rem", "1rem", "1rem"]}
               // mb={"2rem"}
               fontSize={"1rem"}
               fontWeight={"400"}
@@ -87,10 +82,8 @@ function EmployeeImage() {
               </Text>
             </Box>
             <Box
-              // my="10"
-              w="100%"
-              px="1"
-              py="1"
+
+              p={"1rem"}
               bgColor="white"
               borderRadius="50px"
               boxShadow="md"
@@ -103,13 +96,14 @@ function EmployeeImage() {
                 outline={"none"}
                 w={"100%"}
                 borderRadius={"50px"}
-                px="2"
-                py="2"
+                p={"1"}
+
               />
             </Box>
-            <Text 
-            my="10" 
-            fontSize="13px" color={"#767676"}>
+            <Text
+              // my="10"
+              p={["5", "4", "4", "4"]}
+              fontSize="13px" color={"#767676"}>
               By signing up you agree to our{" "}
               <b color={"#25cf60"} font-weight={"100"}>
                 Terms and Conditions
@@ -122,36 +116,38 @@ function EmployeeImage() {
             </Text>
             <Flex
               w={"100%"}
-              gap={"20px"}
-              whiteSpace={"nowrap"}
-              textAlign={"center"}
+              gap={"7"}
+
+
+
               direction={["column", "column", "column", "row"]}
             >
               <Button
-                w={"200px"}
+                size={["10", "10", "10", "10"]}
                 bgColor={"#25cf60"}
-                borderRadius={"26px"}
-                p={["6px", "14px"]}
+                borderRadius={"full"}
+                // p={["4", "4", "4", "4"]}
+                p={"4"}
                 color={"#fff"}
                 fontWeight={"700"}
                 border={"none"}
-                whiteSpace={"nowrap"}
+
                 textAlign={"center"}
                 _hover={{ bgColor: "#1da44c" }}
               >
                 Start tracking time
               </Button>
               <Button
+
                 display={"flex"}
                 alignItems={"center"}
                 justifyContent={"space-between"}
-                p={["1px", "10px"]}
-                w={"200px"}
+                p={["6", "6", "5", "6"]}
+                // w={"200px"}
                 borderRadius={"26px"}
                 color={"rgb(104, 102, 102)"}
                 fontWeight={"500"}
-                whiteSpace={"nowrap"}
-                textAlign={"center"}
+
               >
                 Or sign up with:{" "}
                 <Img
@@ -164,23 +160,23 @@ function EmployeeImage() {
           </Box>
 
           <Flex
-            mb={"2rem"}
-            ml={"2rem"}
+
+            mb={["1rem", "1rem", "2rem", "2rem"]}
+            ml={["0rem", "0rem", "0rem", "4rem"]}
             backdropBlur={"3px"}
             bgColor={"rgba(255, 255, 255, 0.9)"}
-            borderRadius={"6px"}
-            justifyContent={"center"}
+            borderRadius={"md"}
+            justify={"center"}
             flexDirection={"column"}
-            alignItems={"center"}
-            flex={"0 0 48%"}
-            pr={"15px"}
-            pl={"15px"}
+            align={"center"}
+
             w={["100%", "100%", "100%", "50%"]}
-            mt={["3rem", "3rem", "3rem", "20rem"]}
+            mt={["1rem", "2rem", "4rem", "20rem"]}
           >
             <Flex
-              mb={"10px"}
-              mt={"20px"}
+
+              m={"4"}
+
               w={"70px"}
               h={"70px"}
               backdropBlur={"3px"}
@@ -191,8 +187,8 @@ function EmployeeImage() {
             >
               <Img
                 borderRadius={"100%"}
-                w={"70px"}
-                h={"70px"}
+                w={"100%"}
+                h={"100%"}
                 verticalAlign={"middle"}
                 borderStyle={"none"}
                 src="https://cdn-m.timecamp.com/img/person.jpg"
@@ -204,7 +200,7 @@ function EmployeeImage() {
               fontWeight={"550"}
               fontSize={"14px"}
               textAlign={"center"}
-              p={["0", "0.5"]}
+              p={["0rem", "0rem", "0", "0.5"]}
             >
               Adam Wagner, Co-owner and Chief Strategy Officer
             </Box>
@@ -214,18 +210,19 @@ function EmployeeImage() {
               fontSize={"14px"}
               textAlign={"center"}
               p={"1rem"}
-              mb={"2rem"}
+
             >
-              „TimeCamp proved to be an essential management tool that gives us
+              "TimeCamp proved to be an essential management tool that gives us
               clear insight into a projects efficiency and helps to avoid an
               overblown workload for our team.”
             </Box>
             <Image
               w={"20%"}
               h={"21px"}
+              m={"2"}
               verticalAlign={"middle"}
               borderStyle={"none"}
-              mb={"3rem"}
+
               src="https://cdn-m.timecamp.com/img/raindrop_logo.svg"
               alt="raindrop"
             />
@@ -263,7 +260,7 @@ function EmployeeImage() {
               color="white"
               borderRadius={"full"}
               size={"lg"}
-              _hover={{bg:"orange"}}
+              _hover={{ bg: "orange" }}
             >
               Book a Demo
             </Button>

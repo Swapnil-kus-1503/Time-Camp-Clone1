@@ -13,12 +13,7 @@ function Allroutes() {
       <Routes>
         <Route
           path="/"
-          element={
-            <Home />
-            // <Protected>
-
-            // </Protected>
-          }
+          element={<Home />}
         />
         <Route path="/login" element={<LoginInPage />} />
         <Route path="/signup" element={<Singup />} />
