@@ -2,7 +2,7 @@
 
 # Summary
 
-This is the project we tried to clone the website Time camp (https://www.timecamp.com) we were a team of 6 people who have contibuted in this project. Time Camp is a is a web-based application and is dedicated either to freelancers or teams, it automates the processes connected to project and task management by the use of automatic time tracking.
+This is the project we tried to clone the website Time camp (https://www.timecamp.com) we were a team of 5 people who have contibuted in this project. Time Camp is a is a web-based application and is dedicated either to freelancers or teams, it automates the processes connected to project and task management by the use of automatic time tracking.
 ​
 
 ## Screenshots
