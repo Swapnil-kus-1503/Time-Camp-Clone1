@@ -37,7 +37,13 @@ const Task = ({ task }) => {
   const handleTaskDelete = (id) => {
     dispatch(deleteTask(id)).then((r) => dispatch(getTasks()));
   };
-
+  const handleTaskUpdate = () => {
+    const payload = {
+      tag: tagSelection.value,
+    };
+    console.log(payload);
+    dispatch(updateTask(task.id, payload)).then((r) => dispatch(getTasks()));
+  };
   useEffect(() => {
     dispatch(getTags());
   }, []);
@@ -45,7 +51,6 @@ const Task = ({ task }) => {
     <Box borderBottom={"1px solid gray"} h={"80px"}>
       <HStack p={5}>
         <Flex
-          // border={"1px solid blue"}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
           w={600}
@@ -86,7 +91,10 @@ const Task = ({ task }) => {
                       w={"150px"}
                       h={"auto"}
                       border={"1px solid gray"}
-                      // onchange required
+                      onChange={(event) => {
+                        setTagSelection({ value: event.target.value });
+                        handleTaskUpdate();
+                      }}
                       value={tagSelection}
                     >
                       {tagSelect.length > 0 &&
