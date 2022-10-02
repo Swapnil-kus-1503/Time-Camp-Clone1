@@ -32,18 +32,14 @@ function SignUpForm() {
   const { googleSignIn } = UserAuth();
 
   const handleGoogleSignIn = async () => {
-    console.log("Hello");
+
     try {
       await googleSignIn();
     } catch (error) {
       console.log(error);
     }
   };
-  // useEffect(() => {
-  //   if (user !== null) {
-  //     navigate("/login")
-  //   }
-  // }, [user])
+
   const [values, setValues] = useState({
     email: "",
     password: "",

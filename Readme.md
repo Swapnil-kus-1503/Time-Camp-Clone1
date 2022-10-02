@@ -1,57 +1,67 @@
-# Bath & Body Works
-
-​
+# Time Camp Clone
 
 ## Summary
 
-This is the project work of Unit 2 and we are the team of 6 people who have contibuted in this project.
-Bath & Body Works, LLC. is an American retail store chain that sells soaps, lotions, fragrances, and candles. It was founded in 1990 in New Albany, Ohio and has since expanded across 6 continents. In 1997, it was the largest bath shop chain in the United States.
+This is the project we tried to clone the website Time camp (https://www.timecamp.com) we were a team of 6 people who have contibuted in this project. Time Camp is a is a web-based application and is dedicated either to freelancers or teams, it automates the processes connected to project and task management by the use of automatic time tracking.
 ​
 
 ## Screenshots
 
 - ### Landing Page
-  ​
-  ![Landing Page](https://i.ibb.co/LYwSRDp/BBW-Clone.png)
-  ​
-- ### Products Page
-  ​
-  ![Products Page](https://i.ibb.co/BPRpYmQ/BBW-Products.png)
-- ### Sign up and Sign in Page
 
-![Sign Up and Sign In Page](https://i.ibb.co/KmJX9Lm/BBW-Signup-and-Signin.png)
+  ![Landing Page](https://i.ibb.co/27bSjG7/Screenshot-254.png)
+  ​
 
-- ### Cart Page
+- ### Features Page
 
-![Cart Page](https://i.ibb.co/ZVj19fv/BBW-Cart.png)
+  ![Features Page](https://i.ibb.co/SPcv0LL/Screenshot-255.png)
+
+- ### Pricing Page
+
+![Pricing Page](https://i.ibb.co/7NpXm7H/Screenshot-256.png)
+
+- ### Login Page
+
+![Login Page](https://i.ibb.co/89BnJrW/Screenshot-257.png)
+
+- ### Signup Page
+
+![Signup Page](https://i.ibb.co/fCsTyZW/Screenshot-258.png)
+
+- ### Dashboard Page
+
+![Dashboard Page](https://i.ibb.co/d07Tw59/Screenshot-259.png)
 
 ## Features
 
-- ### Sign up and Sign in
-  This website allows users to create their own account and sign in using the required email id and passowrd. If the required details are missing, the user won't be able to login into the website. Without the users signed in, the user would not be able to purchase a product from the website.
+- ### Sign up and Login Page
+  This website allows users to create their own account and sign in using the required email id and passowrd. If the required details are missing, the user won't be able to login into the website. Without the users signed in, the user would not be able access the dashboard page.
 - ### Home page
-  The landing page is the most important page of any ecommerce website. It helps the user navigate through all the trending offers and gift coupons to purchase products at discounted rates. Also there is relevant information regarding all the variety of products available in each and every sub-section.
-- ### Product page
-  The product pages provide the list of products belonging to a certain category. Furthermore, the products can be filtered and sorted according to the user preferences. The user can directly add the desired product in the cart and continue to shop more products.
-- ### Cart page
-  After the user ends up choosing all the desired products to purchase, the user gets directed to the cart page where there is a list of all the products the user would purchase and in what quantity. The total price also gets displayed in the UI underneath all the products. From there, the user can proceed to payment.
+  The landing page is the most important page of any website. It helps the user navigate through all the different pages and get the informations.
+- ### Features page
+  All the Features pages provide the list of all the avaiable features that are available to a certain category.
+- ### Pricing page
+  Pricing page has all the information about all the individual Features along with there respected prices
+- ### Dashboard page
+  After the user is logged in he/she will be able to get the access to the dashboard page where the user can add the tasks as well as delete it and add the time as well if the user wants to logout of the page there is a logout button as well and the user will be redirected to the login page.
   ​
 
 ## Tech Stacks
 
-- HTML
 - CSS
 - JavaScript
-  ​
+- ChakraUI
+- BootStarp
+- Redux
+- React
+- ​
 
 ## Authors
 
-​
+- [@Sriram Boksa](https://github.com/ssksds)
+- [@Subham Dey](https://github.com/jstgrowup)
+- [@Apurba Adhikary](https://github.com/itsApurba)
+- [@Shivam Maurya](https://github.com/shivam0626)
+- [@Swapnil Kushwaha](https://github.com/Swapnil-kus-1503)
 
-- [@ShirsoBhattacharyya](https://github.com/ShirsoBhattacharyya)
-- [@mdalimujtaba](https://github.com/mdalimujtaba)
-- [@ABVenu](https://github.com/ABVenu)
-- [@AmitKuMaurya](https://github.com/AmitKuMaurya)
-- [@guptaroshni](https://github.com/guptaroshni)
-- [@pravusagar](https://github.com/pravusagar)
   ​
