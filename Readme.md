@@ -54,7 +54,7 @@ This is the project we tried to clone the website Time camp (https://www.timecam
 - BootStarp
 - Redux
 - React
--Google_Firebase
+- Google-Firebase
 
 ## Authors
 
