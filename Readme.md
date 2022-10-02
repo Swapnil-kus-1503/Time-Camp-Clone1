@@ -1,6 +1,6 @@
 # Time Camp Clone
 
-## Summary
+# Summary
 
 This is the project we tried to clone the website Time camp (https://www.timecamp.com) we were a team of 6 people who have contibuted in this project. Time Camp is a is a web-based application and is dedicated either to freelancers or teams, it automates the processes connected to project and task management by the use of automatic time tracking.
 ​
@@ -12,41 +12,41 @@ This is the project we tried to clone the website Time camp (https://www.timecam
   ![Landing Page](https://i.ibb.co/27bSjG7/Screenshot-254.png)
   ​
 
-- ### Features Page
+- ## Features Page
 
   ![Features Page](https://i.ibb.co/SPcv0LL/Screenshot-255.png)
 
-- ### Pricing Page
+- ## Pricing Page
 
 ![Pricing Page](https://i.ibb.co/7NpXm7H/Screenshot-256.png)
 
-- ### Login Page
+- ## Login Page
 
 ![Login Page](https://i.ibb.co/89BnJrW/Screenshot-257.png)
 
-- ### Signup Page
+- ## Signup Page
 
 ![Signup Page](https://i.ibb.co/fCsTyZW/Screenshot-258.png)
 
-- ### Dashboard Page
+- ## Dashboard Page
 
 ![Dashboard Page](https://i.ibb.co/d07Tw59/Screenshot-259.png)
 
-## Features
+# Features
 
-- ### Sign up and Login Page
+- ## Sign up and Login Page
   This website allows users to create their own account and sign in using the required email id and passowrd. If the required details are missing, the user won't be able to login into the website. Without the users signed in, the user would not be able access the dashboard page.
-- ### Home page
+- ## Home page
   The landing page is the most important page of any website. It helps the user navigate through all the different pages and get the informations.
-- ### Features page
+- ## Features page
   All the Features pages provide the list of all the avaiable features that are available to a certain category.
-- ### Pricing page
+- ## Pricing page
   Pricing page has all the information about all the individual Features along with there respected prices
-- ### Dashboard page
+- ## Dashboard page
   After the user is logged in he/she will be able to get the access to the dashboard page where the user can add the tasks as well as delete it and add the time as well if the user wants to logout of the page there is a logout button as well and the user will be redirected to the login page.
   ​
 
-## Tech Stacks
+# Tech Stacks
 
 - CSS
 - JavaScript
@@ -54,7 +54,6 @@ This is the project we tried to clone the website Time camp (https://www.timecam
 - BootStarp
 - Redux
 - React
-
 
 ## Authors
 
