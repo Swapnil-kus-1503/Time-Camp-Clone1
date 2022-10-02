@@ -40,11 +40,11 @@ function LoginRightCompo() {
       console.log(error);
     }
   };
-  // useEffect(() => {
-  //   if (user !== null) {
-  //     navigate("/dashboard")
-  //   }
-  // }, [user])
+  useEffect(() => {
+    if (user !== null) {
+      navigate("/dashboard")
+    }
+  }, [user])
   const [values, setValues] = useState({
     email: "",
     password: "",
