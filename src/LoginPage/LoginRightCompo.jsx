@@ -166,7 +166,7 @@ function LoginRightCompo() {
               h={"6"}
               src="https://i.ibb.co/yPYCXhz/googel.png"
             ></Image>{" "}
-            Sign in with Google
+            Log in with Google
           </Button>
           <Text>Or</Text>
 

@@ -7,6 +7,7 @@ const stile = {
   transition: "all 0.8s ease-in-out",
 };
 function LoginInPage() {
+  document.title = "Log In - TimeCamp";
   return (
     <Box style={stile} w={"100%"}>
       <LoginNavbar />

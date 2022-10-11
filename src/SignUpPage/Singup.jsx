@@ -4,6 +4,7 @@ import SignUpForm from "./SignupForm";
 import SignUpNavbar from "./SignupNav";
 
 const Singup = () => {
+  document.title = "Sign Up - TimeCamp";
   return (
     <Box minW={"100%"}>
       <SignUpNavbar />
