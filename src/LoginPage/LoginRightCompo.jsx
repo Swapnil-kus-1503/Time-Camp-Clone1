@@ -66,7 +66,7 @@ function LoginRightCompo() {
         onToggle();
         setType("success");
 
-        navigate("/dashboard");
+        // navigate("/dashboard");
       })
       .catch((er) => {
         onToggle();
