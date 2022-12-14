@@ -5,13 +5,11 @@ import { ScheduleComponent } from "../dashboard2/ScheduleComponent";
 import TaskTimer from "../TaskTimer/TaskTimer";
 import Sidebar from "./Sidebar";
 
-
 const Dashboard = () => {
   return (
     <>
-
       <Flex>
-        <Stack direction={['column', 'row']} spacing='24px'>
+        <Stack direction={["column", "row"]} spacing="24px">
           <Box border="12px" h="700px" position="sticky">
             <Sidebar />
           </Box>
@@ -22,14 +20,6 @@ const Dashboard = () => {
           <TaskTimer />
         </Box>
       </Flex>
-
-
-
-
-
-
-
-
     </>
   );
 };

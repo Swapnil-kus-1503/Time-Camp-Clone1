@@ -29,15 +29,34 @@ export default function StopTimer({ initial = 0, end }) {
   }, []);
 
   return (
-    <Box style={{
-        display:"flex",
-        gap:"25px"
-    }}>
+    <Box
+      style={{
+        display: "flex",
+        gap: "25px",
+      }}
+    >
       <Text color="blue">
-        {isRunning ? (getTimeInString(time)) : "Add manually"}
+        {isRunning ? getTimeInString(time) : "Add manually"}
       </Text>
-      <Button onClick={isRunning ? stopTimer : startTimerInterval}
-       style={isRunning ? {backgroundColor:"#dc0000" ,color:"white", width:"151px", height:"38px",borderRadius:"8px"} : {backgroundColor:"#4bb063", width:"151px", height:"39px",borderRadius:"8px"}}>
+      <Button
+        onClick={isRunning ? stopTimer : startTimerInterval}
+        style={
+          isRunning
+            ? {
+                backgroundColor: "#dc0000",
+                color: "white",
+                width: "151px",
+                height: "38px",
+                borderRadius: "8px",
+              }
+            : {
+                backgroundColor: "#4bb063",
+                width: "151px",
+                height: "39px",
+                borderRadius: "8px",
+              }
+        }
+      >
         {isRunning ? "Stop Timer" : "Start Timer"}
       </Button>
     </Box>

@@ -22,7 +22,6 @@ const Sidebar = ({ setboxWidth, currComp }) => {
   return (
     <Box
       minH={"100vH"}
-  
       //  gap="20px"
       width={toggle ? "80px" : "270px"}
       boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
@@ -53,8 +52,6 @@ const Sidebar = ({ setboxWidth, currComp }) => {
           _hover={{ cursor: "pointer" }}
           boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
           boxSize="30px"
-
-
           borderRadius="50%"
           display={"flex"}
           alignItems="center"
@@ -101,14 +98,9 @@ const Sidebar = ({ setboxWidth, currComp }) => {
             <BiTimeFive
               size={"25px"}
               color={currComp == "TimeSheet" ? "#25cf60" : "gray"}
-
             />
             {toggle ? null : (
-              <Text
-                fontSize={"15px"} color={"#25cf60"}
-
-                fontWeight="semibold"
-              >
+              <Text fontSize={"15px"} color={"#25cf60"} fontWeight="semibold">
                 Timesheet
               </Text>
             )}
@@ -169,7 +161,6 @@ const Sidebar = ({ setboxWidth, currComp }) => {
         alignContent="center"
         p="4"
         mb={2}
-
       >
         <Text
           fontSize={toggle ? "10px" : "13px"}
