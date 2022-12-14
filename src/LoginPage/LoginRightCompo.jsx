@@ -41,10 +41,10 @@ function LoginRightCompo() {
     }
   };
   useEffect(() => {
-    if (user !== null) {
-      navigate("/dashboard")
-    }
-  }, [user])
+    // if (user!== null) {
+    //   navigate("/dashboard");
+    // }
+  }, [user]);
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -66,7 +66,7 @@ function LoginRightCompo() {
         onToggle();
         setType("success");
 
-        // navigate("/dashboard");
+        navigate("/dashboard");
       })
       .catch((er) => {
         onToggle();

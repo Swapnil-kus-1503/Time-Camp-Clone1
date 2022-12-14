@@ -50,11 +50,7 @@ const Task = ({ task }) => {
   return (
     <Box borderBottom={"1px solid gray"} h={"80px"}>
       <HStack p={5}>
-        <Flex
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          w={600}
-        >
+        <Flex onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} w={600}>
           <Box h={"100%"}>
             <Box>
               <Text>
@@ -79,12 +75,11 @@ const Task = ({ task }) => {
                         borderRadius: "10px",
                         padding: "5px",
                         height: "4px",
-                        width: "4px"
+                        width: "4px",
                       }}
-
-
-
-                    ><FaTags /></button>
+                    >
+                      <FaTags />
+                    </button>
                     <select
                       fontSize={12}
                       bg={"white"}

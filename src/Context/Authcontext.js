@@ -13,8 +13,9 @@ export const AuthContextProvider = ({ children }) => {
   const [user, setuser] = useState({});
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider);
-    navigate("/dashboard");
+    signInWithPopup(auth, provider)
+      .then(() => navigate("/dashboard"))
+      .catch((er) => console.log(er));
   };
   const logOut = () => {
     signOut(auth);

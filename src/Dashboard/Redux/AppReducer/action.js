@@ -49,7 +49,7 @@ const postTagsFailure = (e) => {
 const postTags = (params) => (dispatch) => {
   dispatch(postMusicRecordsRequest());
   return axios
-    .post(`https://my-json-latest.herokuapp.com/tags`, params)
+    .post(`https://mock-v41w.onrender.com/tags`, params)
     .then((r) => {
       return dispatch(postMusicRecordsSuccess(r));
     })
@@ -61,7 +61,7 @@ const postTags = (params) => (dispatch) => {
 const getTasks = (params) => (dispatch) => {
   dispatch({ type: types.GET_TASK_REQUEST });
   return axios
-    .get("https://my-json-latest.herokuapp.com/tasks", params)
+    .get("https://mock-v41w.onrender.com/tasks", params)
     .then((r) => dispatch({ type: types.GET_TASK_SUCCESS, payload: r.data }))
     .catch((e) => dispatch({ type: types.GET_TASK_FAILURE, payload: e.data }));
 };
@@ -69,7 +69,7 @@ const getTasks = (params) => (dispatch) => {
 const addTask = (payload) => (dispatch) => {
   dispatch({ type: types.ADD_TASK_REQUEST });
   return axios
-    .post("https://my-json-latest.herokuapp.com/tasks", payload)
+    .post("https://mock-v41w.onrender.com/tasks", payload)
     .then((r) => {
       dispatch({ type: types.ADD_TASK_REQUEST, payload: r.data });
     })
@@ -79,7 +79,7 @@ const addTask = (payload) => (dispatch) => {
 const deleteTask = (id) => (dispatch) => {
   dispatch({ type: types.DELETE_TASK_REQUEST });
   return axios
-    .delete(`https://my-json-latest.herokuapp.com/tasks/${id}`)
+    .delete(`https://mock-v41w.onrender.com/tasks/${id}`)
     .then((r) => dispatch({ type: types.DELETE_TASK_SUCCESS, payload: r.data }))
     .catch((e) =>
       dispatch({ type: types.DELETE_TASK_FAILURE, payload: e.data })
@@ -89,7 +89,7 @@ const deleteTags = (id) => (dispatch) => {
   console.log(id);
   dispatch({ type: types.DELETE_TASK_REQUEST });
   return axios
-    .delete(`https://my-json-latest.herokuapp.com/tags/${id}`)
+    .delete(`https://mock-v41w.onrender.com/tags/${id}`)
     .then((r) => dispatch({ type: types.DELETE_TASK_SUCCESS, payload: r.data }))
     .catch((e) =>
       dispatch({ type: types.DELETE_TASK_FAILURE, payload: e.data })
@@ -99,7 +99,7 @@ const deleteTags = (id) => (dispatch) => {
 const updateTask = (id, payload) => (dispatch) => {
   dispatch({ type: types.UPDATE_TASK_REQUEST });
   return axios
-    .patch(`https://my-json-latest.herokuapp.com/tasks/${id}`, payload)
+    .patch(`https://mock-v41w.onrender.com/tasks/${id}`, payload)
     .then((r) => dispatch({ type: types.UPDATE_TASK_SUCCESS, payload: r.data }))
     .catch((err) =>
       dispatch({ type: types.UPDATE_TASK_FAILURE, payload: err.data })

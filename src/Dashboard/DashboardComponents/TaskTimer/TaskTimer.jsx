@@ -6,16 +6,13 @@ import { Box, HStack, Spacer, Text, VStack } from "@chakra-ui/layout";
 import { Tooltip } from "@chakra-ui/tooltip";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import {
-  FiCopy,
-  FiPlus
-} from "react-icons/fi";
+import { FiCopy, FiPlus } from "react-icons/fi";
 import { addTask, getTasks } from "../../Redux/AppReducer/action";
 import { useDispatch, useSelector } from "react-redux";
 import Task from "./Task";
 import { useNavigate } from "react-router-dom";
 import StopTimer from "./StopTimer";
-import Styles from "./TT.module.css"
+import Styles from "./TT.module.css";
 
 const TaskTimer = () => {
   const [task, setTask] = useState("");
@@ -67,9 +64,7 @@ const TaskTimer = () => {
             <input
               className={Styles.dashboardIP}
               placeholder="Select task and project"
-
               value={task}
-
               onChange={(e) => setTask(e.target.value)}
             ></input>
 
@@ -92,16 +87,17 @@ const TaskTimer = () => {
                 bgColor={"white"}
                 border={"1px solid gray"}
                 borderRadius={7}
-
                 _hover={{ bgColor: "#eaeaea" }}
                 onClick={handleAddTask}
-              ><FiPlus /></IconButton>
+              >
+                <FiPlus />
+              </IconButton>
             </Tooltip>
             <Spacer />
 
             <StopTimer />
           </HStack>
-          <Box >
+          <Box>
             {tasks.length === 0 ? (
               <Box>
                 <VStack justifyContent="center">
@@ -112,7 +108,7 @@ const TaskTimer = () => {
                       "https://cdn.timecamp.com/res/css/images/timesheet-classic-empty-state.svg"
                     }
                   ></Image>
-                  <Box >
+                  <Box>
                     <Text fontSize={"24px"} fontWeight={500}>
                       No recent Time entries
                     </Text>
@@ -136,7 +132,6 @@ const TaskTimer = () => {
               label="new time entry"
               placement="bottom-start"
               fontSize="md"
-
             >
               <button
                 style={{
@@ -146,11 +141,12 @@ const TaskTimer = () => {
                   borderRadius: "10px",
                   padding: "6px",
                   height: "40px",
-                  width: "40px"
+                  width: "40px",
                 }}
-
                 onClick={handleEmptyTaskAdd}
-              >+</button>
+              >
+                +
+              </button>
             </Tooltip>
             <Tooltip
               label="entries from previous timesheets"
@@ -165,10 +161,11 @@ const TaskTimer = () => {
                   borderRadius: "10px",
                   padding: "8px",
                   height: "40px",
-                  width: "40px"
+                  width: "40px",
                 }}
-
-              ><FiCopy /></button>
+              >
+                <FiCopy />
+              </button>
             </Tooltip>
             <Spacer />
             <Button

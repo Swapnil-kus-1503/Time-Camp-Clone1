@@ -8,7 +8,7 @@ import TimeTracking from "./pages/TimeTracking";
 import DummyDashboard from "./DummyDashboard";
 import Pricing from "./pages/Pricing";
 
-import Dashboard from "./Dashboard/DashboardComponents/Dashboard/Dashboard"
+import Dashboard from "./Dashboard/DashboardComponents/Dashboard/Dashboard";
 
 import TimeTrackingMul from "./pages/TimeTrackingMul";
 
@@ -16,10 +16,7 @@ function Allroutes() {
   return (
     <div>
       <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginInPage />} />
         <Route path="/signup" element={<Singup />} />
         <Route path="/time-tracking" element={<TimeTracking />} />
@@ -29,7 +26,6 @@ function Allroutes() {
           path="/dashboard"
           element={
             <Protected>
-              {/* <DummyDashboard /> */}
               <Dashboard />
             </Protected>
           }

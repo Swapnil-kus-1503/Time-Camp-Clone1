@@ -22,12 +22,10 @@ import { TbChartPie } from "react-icons/tb";
 const Reports = ({ toggle }) => {
   return (
     <div>
-      <Box boxShadow='base'>
+      <Box boxShadow="base">
         <Popover trigger={"hover"} placement={"right"}>
           <PopoverTrigger>
             <Box
-
-
               minW={"296px"}
               _hover={{
                 cursor: "pointer",
@@ -36,7 +34,6 @@ const Reports = ({ toggle }) => {
               }}
               height="100%"
               display={"flex"}
-
               p={"2"}
               justifyContent="center"
               alignItems="center"
@@ -48,18 +45,14 @@ const Reports = ({ toggle }) => {
               {toggle ? null : <AiOutlineRight />}
             </Box>
           </PopoverTrigger>
-          <Box >
-
-            <PopoverContent
-              fontSize="14px"
-              width="300px"
-              p="4"
-              zIndex="1000"
-
-
-            >
+          <Box>
+            <PopoverContent fontSize="14px" width="300px" p="4" zIndex="1000">
               <Stack p={"4"}>
-                <Text fontSize={"13px"} fontWeight="semibold" color={"gray.400"}>
+                <Text
+                  fontSize={"13px"}
+                  fontWeight="semibold"
+                  color={"gray.400"}
+                >
                   TIME REPORTS
                 </Text>
                 <VStack borderBottom={"1px solid gray"} height={"170px"}>
@@ -129,7 +122,11 @@ const Reports = ({ toggle }) => {
                   </Flex>
                 </VStack>
 
-                <Text fontSize={"13px"} fontWeight="semibold" color={"gray.400"}>
+                <Text
+                  fontSize={"13px"}
+                  fontWeight="semibold"
+                  color={"gray.400"}
+                >
                   PEOPLE REPORTS
                 </Text>
                 <VStack borderBottom={"1px solid gray"} height={"180px"}>
@@ -199,7 +196,11 @@ const Reports = ({ toggle }) => {
                   </Flex>
                 </VStack>
 
-                <Text fontSize={"13px"} fontWeight="semibold" color={"gray.400"}>
+                <Text
+                  fontSize={"13px"}
+                  fontWeight="semibold"
+                  color={"gray.400"}
+                >
                   BUDGETING REPORTS
                 </Text>
                 <VStack borderBottom={"1px solid gray"} height={"190px"}>
@@ -284,7 +285,11 @@ const Reports = ({ toggle }) => {
                     </Text>
                   </Flex>
                 </VStack>
-                <Text fontSize={"13px"} fontWeight="semibold" color={"gray.400"}>
+                <Text
+                  fontSize={"13px"}
+                  fontWeight="semibold"
+                  color={"gray.400"}
+                >
                   BUDGETING REPORTS
                 </Text>
                 <VStack>
